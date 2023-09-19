@@ -1,0 +1,133 @@
+{
+  "debug": false,
+  "cuda": true,
+  "gpu_device": null,
+  "exp_base": "./exps",
+  "exp_name": "officehome",
+  "exp_id": "Art->Product:p06",
+  "pretrained_exp_dir": null,
+  "data_params": {
+      "name": "office_home",
+      "source": "Art",
+      "aug_src": "aug_0",
+      "target": "Product",
+      "aug_tgt": "aug_0",
+      "fewshot": "p06",
+      "train_val_split": false,
+      "image_size": 224
+  },
+  "model_params": {
+      "out_dim": 512,
+      "version": "pretrain-resnet50",
+      "load_memory_bank": true,
+      "load_weight": "src-tgt",
+      "load_weight_thres": 50,
+      "cls_update": true
+  },
+  "loss_params": {
+      "loss": [
+          "cls-so",
+          "proto-each",
+          "I2C-cross",
+          "semi-condentmax",
+          "semi-entmin",
+          "tgt-condentmax",
+          "tgt-entmin"
+      ],
+      "weight": [
+          1,
+          1,
+          1,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+      ],
+      "start": null,
+      "end": null,
+      "temp": 0.1,
+      "m": 0.5,
+      "T": 0.05,
+      "clus": {
+          "kmeans_freq": 1,
+          "type": [
+              "each"
+          ],
+          "k": [
+              65,
+              65,
+              65,
+              65,
+              65,
+              65,
+              65,
+              65,
+              65,
+              65,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130,
+              130
+          ],
+          "n_k":1
+      },
+      "pseudo": true,
+      "thres_src": 0.99,
+      "thres_tgt": 0.99
+  },
+  "num_epochs": 500,
+  "steps_epoch": null,
+  "optim_params": {
+      "batch_size_lbd": 32,
+      "batch_size_src": 64,
+      "batch_size_tgt": 64,
+      "batch_size": 64,
+      "combine": false,
+      "learning_rate": 0.01,
+      "conv_lr_ratio": 0.1,
+      "momentum": 0.9,
+      "nesterov": true,
+      "decay": true,
+      "weight_decay": 0.0005,
+      "patience": 4
+  },
+  "validate_freq": 1,
+  "visualize": {
+      "feature_analysis_freq": 1,
+      "log": true,
+      "stat": true,
+      "svm_freq": null,
+      "tsne_freq": null,
+      "tsne_clus": false,
+      "clus_freq": null,
+      "confusion_freq": null,
+      "error_freq": null
+  },
+  "copy_checkpoint_freq": 20,
+  "confidence_params":
+  {
+    "confidence_ratio": 0.75,
+    "lambda_mixed": 1.0,
+    "mixup_alpha": 0.75,
+    "lambda_target_mixed": 0.1,
+    "target_inside_ratio": 0.01,
+    "target_inside_confidence": 0.95
+  },
+  "seed": 811088573
+}

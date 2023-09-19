@@ -1,0 +1,688 @@
+[INFO] 2022-09-10 04:02:32,396: Experiment directory is located at ./exps/experiments/officehome/09-09-PrCl_mixup_p06_random_target_inside_ratio_0.20_lambda_target_mixed_0.10_target_inside_confidence_0.75-220910040232 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:123
+[INFO] 2022-09-10 04:02:32,397: Configurations and directories successfully set up. in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:125
+[INFO] 2022-09-10 04:02:32,409: Start at time: 2022.09.10-04:02:32 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:161
+[INFO] 2022-09-10 04:02:32,409: Server: ubuntu-KI4224G in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:162
+[INFO] 2022-09-10 04:02:32,582: User specified 1 GPUs: 0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:104
+[INFO] 2022-09-10 04:02:37,787: Program will run on *****GPU-CUDA*****  in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:109
+[INFO] 2022-09-10 04:02:37,788: Python VERSION: 3.7.11 (default, Jul 27 2021, 14:32:16) 
+[GCC 7.5.0] in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:230
+[INFO] 2022-09-10 04:02:37,788: pytorch VERSION: 1.8.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:231
+[INFO] 2022-09-10 04:02:37,788: CUDA VERSION: 11.1 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:232
+[INFO] 2022-09-10 04:02:37,788: CUDNN VERSION: 8005 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:233
+[INFO] 2022-09-10 04:02:37,788: Device NAME: NVIDIA GeForce RTX 3090 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:234
+[INFO] 2022-09-10 04:02:37,788: Number CUDA Devices: 1 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:235
+[INFO] 2022-09-10 04:02:37,789: Available devices: 1 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:236
+[INFO] 2022-09-10 04:02:37,789: current CUDA Device: 0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:237
+[INFO] 2022-09-10 04:02:37,888: Dataset office_home, source Product, target Clipart in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:293
+[INFO] 2022-09-10 04:02:37,888: Imagenet pretrained model used in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:301
+[INFO] 2022-09-10 04:03:16,230: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:03:16,257: Now training with seed 1255563890. in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:131
+[INFO] 2022-09-10 04:03:27,413: [Epoch 0 unlabeled Product] loss=1.46855, acc=3191/4175(76.431%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:03:27,414: [Epoch 0 unlabeled Product] loss=1.46855, per-class acc=73.541%
+81.08 93.55 81.03 84.62 95.0 70.69 74.42 72.37 92.11 71.15 76.34 55.74 58.24 78.31 90.14 75.64 96.83 39.47 85.94 92.59 59.7 92.47 87.21 60.0 7.69 98.41 77.78 90.59 94.12 95.74 61.54 84.31 73.4 60.38 96.74 79.41 91.11 64.1 52.87 98.44 86.36 61.36 44.64 13.16 33.33 96.77 40.0 40.0 92.73 90.91 82.8 76.32 56.52 81.4 84.95 70.0 76.34 77.78 33.8 69.64 87.27 51.28 66.67 88.51 86.32 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:03:36,303: [Epoch 0 unlabeled Clipart] loss=2.92244, acc=1439/4365(32.967%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:03:36,304: [Epoch 0 unlabeled Clipart] loss=2.92244, per-class acc=32.555%
+35.0 17.86 21.88 6.12 57.58 29.29 31.51 67.39 55.13 9.09 48.48 5.0 11.11 1.56 28.57 19.51 43.75 10.0 92.68 34.0 22.5 22.5 15.15 47.47 0.0 71.15 32.32 52.17 65.0 38.38 43.4 55.0 63.64 19.72 50.51 20.0 55.26 31.31 31.33 7.5 47.06 60.0 9.09 10.1 0.0 26.44 0.0 32.61 17.5 61.19 82.83 36.0 16.67 11.9 20.93 13.11 24.44 36.67 23.23 43.75 20.2 5.13 36.36 58.49 52.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:03:49,840: [Mix up source and target] source acc: 0.9737; target acc: 0.3297 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:04:03,223: [Mix up inside target] target acc: 0.3297 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:04:03,427: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:04:03,427: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:04:03,428: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:06:49,446: [Epoch 1 unlabeled Product] loss=0.83867, acc=3218/4175(77.078%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:06:49,446: [Epoch 1 unlabeled Product] loss=0.83867, per-class acc=74.064%
+93.24 84.95 70.69 76.92 95.0 70.69 83.72 88.16 92.11 84.62 79.57 67.21 36.26 86.75 95.77 71.79 96.83 42.11 95.31 87.04 91.04 97.85 96.51 58.82 7.69 96.83 79.63 88.24 95.59 100.0 41.03 84.31 69.15 58.49 98.91 70.59 96.67 69.23 52.87 98.44 87.88 72.73 42.86 10.53 25.0 96.77 45.0 30.0 85.45 87.27 78.49 81.58 54.35 90.7 72.04 67.5 89.25 91.11 26.76 83.93 81.82 38.46 54.76 85.06 84.21 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:07:03,976: [Epoch 1 unlabeled Clipart] loss=2.67652, acc=1786/4365(40.916%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:07:03,977: [Epoch 1 unlabeled Clipart] loss=2.67652, per-class acc=40.637%
+58.33 26.79 25.0 22.45 62.63 47.47 39.73 69.57 57.69 19.19 55.56 27.5 11.11 40.62 47.62 12.2 54.17 12.5 100.0 36.0 27.5 75.0 58.59 33.33 0.0 73.08 47.47 56.52 75.0 38.38 24.53 67.5 72.73 14.08 70.71 37.5 63.16 49.49 33.73 2.5 54.9 67.5 9.09 12.12 0.0 34.48 0.0 39.13 40.0 83.58 81.82 48.0 23.81 11.9 27.91 22.95 36.67 55.0 18.18 62.5 21.21 0.0 25.25 58.49 60.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:07:19,866: [Mix up source and target] source acc: 0.9925; target acc: 0.4092 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:07:34,592: [Mix up inside target] target acc: 0.4092 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:07:34,706: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:07:34,706: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:07:34,707: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:10:05,566: [Epoch 2 unlabeled Product] loss=0.98558, acc=3215/4175(77.006%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:10:05,567: [Epoch 2 unlabeled Product] loss=0.98558, per-class acc=74.435%
+90.54 94.62 56.9 82.05 95.0 77.59 83.72 75.0 93.42 82.69 79.57 65.57 47.25 85.54 98.59 70.51 96.83 57.89 98.44 87.04 91.04 82.8 94.19 43.53 7.69 95.24 87.04 96.47 92.65 97.87 53.85 84.31 62.77 56.6 98.91 82.35 88.89 74.36 52.87 96.88 86.36 65.91 41.07 7.89 13.89 96.77 37.5 77.5 85.45 96.36 79.57 81.58 67.39 90.7 82.8 55.0 80.65 80.0 35.21 82.14 87.27 41.03 45.24 85.06 76.84 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:10:22,589: [Epoch 2 unlabeled Clipart] loss=4.06699, acc=1831/4365(41.947%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:10:22,590: [Epoch 2 unlabeled Clipart] loss=4.06699, per-class acc=42.172%
+68.33 35.71 26.56 19.39 74.75 48.48 49.32 63.04 65.38 27.27 57.58 37.5 11.11 43.75 57.14 9.76 56.25 10.0 100.0 34.0 47.5 82.5 68.69 23.23 0.0 69.23 52.53 68.12 70.0 33.33 37.74 77.5 68.69 16.9 64.65 45.0 57.89 52.53 24.1 7.5 54.9 70.0 8.08 11.11 2.44 28.74 2.5 39.13 40.0 86.57 81.82 49.33 23.81 2.38 41.86 21.31 26.67 56.67 14.14 61.25 22.22 5.13 22.22 50.94 55.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:10:41,873: [Mix up source and target] source acc: 0.9962; target acc: 0.4195 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:11:01,721: [Mix up inside target] target acc: 0.4195 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:11:01,898: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:11:01,898: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:11:01,899: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:13:32,545: [Epoch 3 unlabeled Product] loss=1.11683, acc=3269/4175(78.299%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:13:32,546: [Epoch 3 unlabeled Product] loss=1.11683, per-class acc=75.483%
+93.24 95.7 63.79 87.18 92.5 75.86 83.72 61.84 93.42 92.31 80.65 57.38 53.85 68.67 95.77 74.36 98.41 36.84 96.88 88.89 91.04 91.4 93.02 56.47 15.38 100.0 88.89 94.12 89.71 97.87 48.72 82.35 65.96 56.6 94.57 80.88 87.78 79.49 64.37 98.44 86.36 77.27 39.29 13.16 22.22 100.0 35.0 47.5 87.27 90.91 77.42 84.21 69.57 93.02 78.49 57.5 87.1 77.78 63.38 89.29 90.91 41.03 54.76 86.21 88.42 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:13:45,085: [Epoch 3 unlabeled Clipart] loss=4.90538, acc=1842/4365(42.199%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:13:45,085: [Epoch 3 unlabeled Clipart] loss=4.90538, per-class acc=42.553%
+71.67 32.14 21.88 17.35 56.57 46.46 53.42 56.52 65.38 32.32 48.48 32.5 13.13 39.06 59.52 17.07 60.42 15.0 100.0 32.0 60.0 82.5 62.63 30.3 0.0 75.0 59.6 63.77 67.5 35.35 33.96 77.5 73.74 11.27 62.63 55.0 56.58 60.61 24.1 15.0 58.82 75.0 7.07 21.21 7.32 31.03 2.5 39.13 27.5 83.58 80.81 44.0 16.67 2.38 37.21 22.95 33.33 46.67 14.14 65.0 19.19 5.13 23.23 64.15 60.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:14:00,682: [Mix up source and target] source acc: 1.0000; target acc: 0.4220 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:14:18,078: [Mix up inside target] target acc: 0.4220 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:14:18,545: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:14:18,545: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:14:18,545: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:17:02,777: [Epoch 4 unlabeled Product] loss=1.22558, acc=3275/4175(78.443%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:17:02,778: [Epoch 4 unlabeled Product] loss=1.22558, per-class acc=76.312%
+93.24 98.92 56.9 87.18 92.5 77.59 93.02 30.26 92.11 92.31 80.65 50.82 60.44 69.88 95.77 76.92 96.83 57.89 90.62 92.59 89.55 88.17 91.86 54.12 28.21 100.0 88.89 92.94 88.24 97.87 53.85 80.39 62.77 41.51 94.57 82.35 87.78 79.49 59.77 98.44 89.39 75.0 60.71 15.79 41.67 98.92 37.5 75.0 85.45 90.91 77.42 81.58 69.57 83.72 80.65 70.0 81.72 75.56 67.61 89.29 94.55 41.03 52.38 85.06 92.63 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:17:14,333: [Epoch 4 unlabeled Clipart] loss=5.21818, acc=1931/4365(44.238%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:17:14,334: [Epoch 4 unlabeled Clipart] loss=5.21818, per-class acc=44.455%
+71.67 44.64 25.0 10.2 61.62 57.58 53.42 39.13 65.38 39.39 50.51 37.5 9.09 43.75 61.9 17.07 56.25 15.0 100.0 32.0 67.5 87.5 70.71 39.39 0.0 73.08 59.6 68.12 72.5 42.42 26.42 80.0 70.71 15.49 65.66 65.0 59.21 64.65 32.53 12.5 62.75 77.5 16.16 24.24 4.88 35.63 5.0 34.78 32.5 83.58 81.82 48.0 19.05 2.38 53.49 21.31 28.89 50.0 10.1 63.75 23.23 5.13 17.17 64.15 60.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:17:29,827: [Mix up source and target] source acc: 0.9962; target acc: 0.4424 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:17:47,543: [Mix up inside target] target acc: 0.4424 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:17:47,644: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:17:47,644: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:17:47,645: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:20:35,230: [Epoch 5 unlabeled Product] loss=1.35855, acc=3284/4175(78.659%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:20:35,230: [Epoch 5 unlabeled Product] loss=1.35855, per-class acc=76.417%
+91.89 98.92 58.62 84.62 92.5 77.59 86.05 59.21 92.11 90.38 82.8 50.82 62.64 84.34 97.18 73.08 98.41 65.79 90.62 92.59 91.04 90.32 91.86 50.59 20.51 98.41 87.04 94.12 83.82 97.87 46.15 80.39 61.7 32.08 94.57 85.29 86.67 82.05 63.22 98.44 84.85 70.45 30.36 15.79 55.56 100.0 32.5 82.5 89.09 90.91 77.42 86.84 67.39 93.02 77.42 57.5 73.12 84.44 77.46 87.5 92.73 41.03 57.14 87.36 88.42 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:20:47,369: [Epoch 5 unlabeled Clipart] loss=5.54311, acc=2005/4365(45.934%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:20:47,370: [Epoch 5 unlabeled Clipart] loss=5.54311, per-class acc=46.075%
+73.33 48.21 28.12 21.43 67.68 61.62 53.42 54.35 65.38 41.41 53.54 32.5 13.13 60.94 64.29 9.76 66.67 17.5 100.0 30.0 77.5 85.0 73.74 39.39 0.0 75.0 62.63 69.57 67.5 44.44 24.53 80.0 71.72 15.49 63.64 67.5 60.53 64.65 39.76 20.0 60.78 77.5 4.04 23.23 9.76 44.83 2.5 34.78 30.0 82.09 81.82 53.33 19.05 2.38 51.16 19.67 26.67 55.0 9.09 66.25 21.21 5.13 20.2 66.04 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:21:00,420: [Mix up source and target] source acc: 0.9962; target acc: 0.4593 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:21:15,081: [Mix up inside target] target acc: 0.4593 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:21:15,179: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:21:15,179: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:21:15,180: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:24:07,486: [Epoch 6 unlabeled Product] loss=1.47734, acc=3271/4175(78.347%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:24:07,486: [Epoch 6 unlabeled Product] loss=1.47734, per-class acc=76.259%
+93.24 97.85 58.62 84.62 92.5 81.03 90.7 50.0 92.11 88.46 81.72 44.26 61.54 79.52 95.77 79.49 98.41 71.05 87.5 94.44 88.06 90.32 91.86 47.06 25.64 96.83 87.04 95.29 82.35 97.87 56.41 80.39 61.7 32.08 93.48 86.76 87.78 79.49 64.37 98.44 90.91 72.73 28.57 13.16 36.11 100.0 35.0 87.5 89.09 90.91 79.57 86.84 69.57 95.35 74.19 55.0 75.27 75.56 71.83 87.5 92.73 53.85 57.14 85.06 87.37 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:24:19,339: [Epoch 6 unlabeled Clipart] loss=5.92089, acc=2004/4365(45.911%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:24:19,340: [Epoch 6 unlabeled Clipart] loss=5.92089, per-class acc=46.284%
+73.33 53.57 25.0 16.33 63.64 59.6 53.42 52.17 65.38 38.38 54.55 27.5 10.1 60.94 64.29 9.76 68.75 17.5 100.0 32.0 75.0 85.0 69.7 35.35 0.0 73.08 60.61 72.46 70.0 43.43 32.08 80.0 67.68 15.49 60.61 67.5 57.89 66.67 40.96 25.0 64.71 75.0 0.0 23.23 7.32 49.43 2.5 34.78 25.0 82.09 84.85 58.67 23.81 2.38 65.12 18.03 28.89 53.33 10.1 68.75 22.22 10.26 27.27 66.04 60.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:24:32,918: [Mix up source and target] source acc: 1.0000; target acc: 0.4591 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:24:47,102: [Mix up inside target] target acc: 0.4591 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:24:47,203: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:24:47,203: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:24:47,204: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:27:26,110: [Epoch 7 unlabeled Product] loss=1.66324, acc=3286/4175(78.707%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:27:26,111: [Epoch 7 unlabeled Product] loss=1.66324, per-class acc=76.738%
+93.24 96.77 51.72 84.62 92.5 75.86 74.42 63.16 92.11 90.38 82.8 45.9 69.23 89.16 95.77 79.49 96.83 76.32 85.94 92.59 86.57 92.47 91.86 43.53 33.33 98.41 87.04 95.29 83.82 95.74 58.97 76.47 59.57 30.19 85.87 86.76 87.78 79.49 63.22 95.31 90.91 72.73 25.0 21.05 55.56 100.0 35.0 82.5 87.27 89.09 79.57 86.84 69.57 88.37 75.27 67.5 78.49 80.0 77.46 89.29 94.55 53.85 57.14 86.21 84.21 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:27:39,236: [Epoch 7 unlabeled Clipart] loss=6.21220, acc=2031/4365(46.529%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:27:39,237: [Epoch 7 unlabeled Clipart] loss=6.21220, per-class acc=46.817%
+75.0 53.57 21.88 18.37 74.75 63.64 50.68 52.17 65.38 38.38 56.57 27.5 13.13 62.5 64.29 9.76 66.67 17.5 100.0 32.0 75.0 85.0 65.66 35.35 1.64 73.08 62.63 75.36 72.5 45.45 28.3 80.0 65.66 15.49 59.6 67.5 60.53 66.67 38.55 22.5 62.75 77.5 0.0 23.23 7.32 49.43 5.0 30.43 37.5 80.6 85.86 56.0 21.43 4.76 69.77 19.67 34.44 55.0 11.11 70.0 20.2 5.13 27.27 66.04 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:27:53,655: [Mix up source and target] source acc: 1.0000; target acc: 0.4653 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:28:08,301: [Mix up inside target] target acc: 0.4653 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:28:08,393: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:28:08,394: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:28:08,394: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:30:47,373: [Epoch 8 unlabeled Product] loss=1.75539, acc=3255/4175(77.964%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:30:47,374: [Epoch 8 unlabeled Product] loss=1.75539, per-class acc=76.071%
+93.24 98.92 41.38 84.62 92.5 77.59 86.05 63.16 93.42 90.38 82.8 44.26 69.23 75.9 95.77 80.77 96.83 71.05 89.06 92.59 88.06 94.62 87.21 44.71 30.77 96.83 88.89 95.29 86.76 93.62 46.15 76.47 60.64 26.42 80.43 85.29 91.11 82.05 62.07 95.31 90.91 72.73 25.0 15.79 55.56 100.0 37.5 77.5 89.09 89.09 73.12 86.84 71.74 95.35 72.04 72.5 66.67 80.0 81.69 87.5 94.55 53.85 47.62 87.36 88.42 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:31:00,361: [Epoch 8 unlabeled Clipart] loss=6.50052, acc=2036/4365(46.644%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:31:00,361: [Epoch 8 unlabeled Clipart] loss=6.50052, per-class acc=46.937%
+76.67 50.0 23.44 21.43 72.73 64.65 53.42 58.7 65.38 39.39 57.58 30.0 13.13 60.94 64.29 14.63 66.67 17.5 97.56 32.0 72.5 90.0 68.69 36.36 1.64 75.0 61.62 75.36 70.0 44.44 28.3 80.0 66.67 14.08 57.58 65.0 60.53 67.68 36.14 27.5 68.63 70.0 0.0 29.29 7.32 50.57 20.0 32.61 27.5 83.58 84.85 54.67 19.05 4.76 67.44 19.67 24.44 55.0 14.14 68.75 21.21 0.0 22.22 66.04 60.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:31:15,031: [Mix up source and target] source acc: 1.0000; target acc: 0.4664 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:31:28,565: [Mix up inside target] target acc: 0.4664 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:31:28,688: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:31:28,688: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:31:28,689: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:34:15,612: [Epoch 9 unlabeled Product] loss=1.95558, acc=3263/4175(78.156%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:34:15,613: [Epoch 9 unlabeled Product] loss=1.95558, per-class acc=76.609%
+93.24 98.92 46.55 84.62 92.5 75.86 88.37 71.05 93.42 88.46 82.8 40.98 71.43 77.11 95.77 82.05 96.83 73.68 85.94 90.74 86.57 96.77 80.23 42.35 30.77 100.0 85.19 95.29 88.24 97.87 66.67 80.39 59.57 28.3 77.17 85.29 87.78 79.49 59.77 98.44 90.91 75.0 23.21 10.53 75.0 100.0 37.5 87.5 89.09 89.09 73.12 86.84 69.57 93.02 65.59 75.0 68.82 73.33 77.46 87.5 90.91 51.28 57.14 86.21 89.47 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:34:31,224: [Epoch 9 unlabeled Clipart] loss=6.82518, acc=2049/4365(46.942%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:34:31,224: [Epoch 9 unlabeled Clipart] loss=6.82518, per-class acc=47.373%
+78.33 55.36 20.31 21.43 72.73 64.65 53.42 54.35 65.38 40.4 56.57 32.5 20.2 62.5 64.29 9.76 68.75 17.5 100.0 32.0 75.0 90.0 66.67 38.38 1.64 75.0 65.66 72.46 70.0 43.43 32.08 80.0 66.67 15.49 47.47 70.0 61.84 65.66 33.73 27.5 68.63 75.0 0.0 25.25 7.32 50.57 10.0 32.61 32.5 83.58 84.85 56.0 26.19 4.76 67.44 18.03 27.78 55.0 15.15 70.0 21.21 2.56 25.25 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:34:47,136: [Mix up source and target] source acc: 1.0000; target acc: 0.4694 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:35:02,268: [Mix up inside target] target acc: 0.4694 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:35:02,362: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:35:02,362: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:35:02,363: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:37:47,313: [Epoch 10 unlabeled Product] loss=2.11375, acc=3239/4175(77.581%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:37:47,314: [Epoch 10 unlabeled Product] loss=2.11375, per-class acc=76.201%
+93.24 95.7 43.1 84.62 92.5 74.14 90.7 67.11 92.11 88.46 82.8 42.62 67.03 86.75 94.37 82.05 93.65 71.05 85.94 94.44 88.06 94.62 80.23 45.88 38.46 98.41 87.04 95.29 88.24 97.87 58.97 76.47 60.64 30.19 56.52 86.76 87.78 79.49 56.32 95.31 90.91 70.45 25.0 13.16 69.44 100.0 37.5 82.5 89.09 89.09 70.97 86.84 69.57 95.35 67.74 77.5 70.97 71.11 85.92 87.5 89.09 53.85 64.29 85.06 85.26 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:38:01,353: [Epoch 10 unlabeled Clipart] loss=6.97069, acc=2049/4365(46.942%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:38:01,353: [Epoch 10 unlabeled Clipart] loss=6.97069, per-class acc=47.262%
+78.33 55.36 21.88 22.45 72.73 64.65 56.16 54.35 65.38 42.42 56.57 35.0 15.15 59.38 64.29 9.76 66.67 15.0 100.0 32.0 75.0 90.0 64.65 38.38 6.56 75.0 65.66 72.46 70.0 42.42 35.85 80.0 67.68 15.49 35.35 65.0 61.84 70.71 37.35 25.0 66.67 75.0 0.0 22.22 7.32 51.72 7.5 32.61 35.0 82.09 84.85 53.33 19.05 4.76 72.09 19.67 33.33 55.0 22.22 68.75 21.21 2.56 30.3 60.38 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:38:18,960: [Mix up source and target] source acc: 1.0000; target acc: 0.4694 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:38:34,973: [Mix up inside target] target acc: 0.4694 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:38:35,092: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:38:35,092: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:38:35,093: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:41:15,206: [Epoch 11 unlabeled Product] loss=2.16320, acc=3235/4175(77.485%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:41:15,207: [Epoch 11 unlabeled Product] loss=2.16320, per-class acc=76.294%
+93.24 96.77 41.38 84.62 92.5 74.14 93.02 63.16 90.79 88.46 82.8 47.54 73.63 84.34 94.37 83.33 95.24 73.68 84.38 94.44 85.07 95.7 76.74 38.82 43.59 96.83 87.04 95.29 83.82 97.87 56.41 80.39 60.64 28.3 75.0 85.29 87.78 82.05 48.28 98.44 90.91 72.73 23.21 10.53 80.56 100.0 40.0 87.5 85.45 89.09 70.97 86.84 71.74 95.35 66.67 77.5 61.29 71.11 78.87 87.5 89.09 51.28 64.29 86.21 85.26 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:41:27,728: [Epoch 11 unlabeled Clipart] loss=7.06296, acc=2054/4365(47.056%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:41:27,729: [Epoch 11 unlabeled Clipart] loss=7.06296, per-class acc=47.442%
+78.33 55.36 25.0 21.43 76.77 64.65 54.79 54.35 65.38 42.42 56.57 40.0 21.21 59.38 64.29 9.76 66.67 17.5 97.56 32.0 75.0 90.0 62.63 38.38 3.28 75.0 66.67 72.46 70.0 37.37 33.96 80.0 66.67 14.08 46.46 65.0 61.84 70.71 37.35 27.5 68.63 72.5 0.0 23.23 9.76 50.57 10.0 32.61 37.5 82.09 85.86 53.33 21.43 4.76 74.42 16.39 26.67 55.0 18.18 68.75 21.21 0.0 28.28 62.26 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:41:46,514: [Mix up source and target] source acc: 0.9962; target acc: 0.4706 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:42:03,525: [Mix up inside target] target acc: 0.4706 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:42:03,633: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:42:03,634: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:42:03,634: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:44:46,766: [Epoch 12 unlabeled Product] loss=2.21547, acc=3100/4175(74.251%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:44:46,767: [Epoch 12 unlabeled Product] loss=2.21547, per-class acc=73.337%
+85.14 92.47 46.55 84.62 92.5 74.14 88.37 71.05 90.79 88.46 80.65 40.98 68.13 75.9 94.37 80.77 93.65 63.16 82.81 92.59 88.06 88.17 68.6 38.82 33.33 76.19 83.33 92.94 82.35 92.55 41.03 76.47 58.51 7.55 70.65 85.29 87.78 82.05 52.87 95.31 89.39 63.64 23.21 13.16 77.78 92.47 47.5 92.5 89.09 89.09 70.97 81.58 71.74 95.35 68.82 77.5 29.03 73.33 83.1 85.71 89.09 51.28 61.9 82.76 77.89 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:45:00,309: [Epoch 12 unlabeled Clipart] loss=7.02829, acc=2026/4365(46.415%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:45:00,310: [Epoch 12 unlabeled Clipart] loss=7.02829, per-class acc=46.907%
+75.0 55.36 26.56 23.47 75.76 64.65 56.16 54.35 65.38 41.41 56.57 32.5 15.15 60.94 66.67 9.76 66.67 17.5 100.0 32.0 75.0 87.5 64.65 36.36 3.28 73.08 66.67 72.46 70.0 41.41 20.75 80.0 66.67 5.63 37.37 65.0 61.84 69.7 38.55 22.5 66.67 75.0 0.0 23.23 9.76 50.57 20.0 34.78 32.5 82.09 85.86 52.0 21.43 4.76 74.42 18.03 21.11 55.0 23.23 68.75 20.2 5.13 22.22 67.92 60.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:45:16,830: [Mix up source and target] source acc: 0.9812; target acc: 0.4641 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:45:32,534: [Mix up inside target] target acc: 0.4641 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:45:32,653: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:45:32,654: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:45:32,654: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:48:21,504: [Epoch 13 unlabeled Product] loss=2.36105, acc=3233/4175(77.437%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:48:21,505: [Epoch 13 unlabeled Product] loss=2.36105, per-class acc=76.213%
+91.89 93.55 46.55 84.62 92.5 72.41 90.7 69.74 89.47 88.46 82.8 44.26 68.13 75.9 94.37 82.05 93.65 71.05 85.94 94.44 85.07 95.7 80.23 41.18 53.85 100.0 87.04 95.29 82.35 97.87 56.41 74.51 60.64 30.19 78.26 85.29 88.89 82.05 49.43 98.44 90.91 72.73 23.21 10.53 77.78 100.0 40.0 87.5 87.27 89.09 70.97 86.84 71.74 95.35 67.74 77.5 65.59 68.89 80.28 85.71 85.45 51.28 61.9 86.21 84.21 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:48:34,973: [Epoch 13 unlabeled Clipart] loss=7.44412, acc=2079/4365(47.629%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:48:34,974: [Epoch 13 unlabeled Clipart] loss=7.44412, per-class acc=48.053%
+76.67 53.57 25.0 22.45 78.79 64.65 52.05 54.35 65.38 42.42 56.57 37.5 19.19 60.94 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 67.68 38.38 9.84 75.0 66.67 72.46 70.0 43.43 32.08 80.0 66.67 12.68 43.43 70.0 61.84 70.71 38.55 35.0 68.63 75.0 0.0 25.25 7.32 51.72 12.5 32.61 40.0 83.58 85.86 53.33 21.43 4.76 74.42 18.03 30.0 51.67 16.16 68.75 21.21 0.0 29.29 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:48:50,496: [Mix up source and target] source acc: 1.0000; target acc: 0.4763 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:49:05,321: [Mix up inside target] target acc: 0.4763 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:49:05,422: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:49:05,423: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:49:05,423: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:51:44,308: [Epoch 14 unlabeled Product] loss=2.43625, acc=3226/4175(77.269%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:51:44,309: [Epoch 14 unlabeled Product] loss=2.43625, per-class acc=76.165%
+91.89 93.55 46.55 84.62 92.5 68.97 93.02 67.11 86.84 88.46 82.8 47.54 70.33 83.13 94.37 82.05 92.06 71.05 81.25 94.44 85.07 96.77 72.09 41.18 48.72 100.0 87.04 95.29 82.35 97.87 56.41 78.43 60.64 30.19 66.3 85.29 86.67 84.62 50.57 98.44 90.91 70.45 23.21 10.53 77.78 100.0 42.5 87.5 90.91 87.27 69.89 86.84 71.74 93.02 65.59 77.5 73.12 68.89 78.87 87.5 89.09 56.41 64.29 86.21 84.21 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:51:57,443: [Epoch 14 unlabeled Clipart] loss=7.49943, acc=2076/4365(47.560%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:51:57,443: [Epoch 14 unlabeled Clipart] loss=7.49943, per-class acc=47.982%
+78.33 55.36 25.0 23.47 75.76 64.65 53.42 54.35 65.38 42.42 55.56 35.0 24.24 67.19 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 64.65 37.37 3.28 75.0 65.66 72.46 70.0 42.42 26.42 80.0 66.67 14.08 37.37 65.0 61.84 70.71 36.14 30.0 66.67 72.5 0.0 25.25 7.32 51.72 10.0 36.96 45.0 82.09 85.86 53.33 21.43 7.14 74.42 18.03 33.33 55.0 23.23 68.75 22.22 5.13 26.26 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:52:15,064: [Mix up source and target] source acc: 1.0000; target acc: 0.4756 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:52:30,330: [Mix up inside target] target acc: 0.4756 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:52:30,462: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:52:30,463: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:52:30,463: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:55:11,568: [Epoch 15 unlabeled Product] loss=2.55487, acc=3212/4175(76.934%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:55:11,569: [Epoch 15 unlabeled Product] loss=2.55487, per-class acc=75.770%
+91.89 93.55 43.1 84.62 92.5 68.97 90.7 65.79 92.11 88.46 82.8 50.82 69.23 85.54 94.37 82.05 93.65 63.16 85.94 94.44 85.07 93.55 66.28 42.35 43.59 100.0 87.04 95.29 83.82 97.87 53.85 78.43 60.64 28.3 75.0 85.29 86.67 82.05 44.83 98.44 90.91 72.73 23.21 15.79 77.78 98.92 37.5 92.5 85.45 89.09 69.89 86.84 69.57 95.35 66.67 77.5 65.59 68.89 78.87 85.71 89.09 53.85 61.9 86.21 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:55:21,850: [Epoch 15 unlabeled Clipart] loss=7.66978, acc=2079/4365(47.629%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:55:21,851: [Epoch 15 unlabeled Clipart] loss=7.66978, per-class acc=47.923%
+78.33 55.36 25.0 24.49 79.8 64.65 56.16 54.35 65.38 42.42 56.57 32.5 24.24 64.06 66.67 9.76 66.67 17.5 100.0 32.0 75.0 87.5 63.64 38.38 6.56 75.0 66.67 72.46 70.0 42.42 20.75 80.0 66.67 11.27 42.42 65.0 61.84 71.72 34.94 35.0 68.63 72.5 0.0 26.26 7.32 50.57 7.5 36.96 47.5 83.58 85.86 53.33 21.43 4.76 74.42 18.03 30.0 53.33 22.22 68.75 22.22 0.0 26.26 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:55:35,436: [Mix up source and target] source acc: 1.0000; target acc: 0.4763 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:55:47,416: [Mix up inside target] target acc: 0.4763 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:55:47,496: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:55:47,496: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:55:47,496: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 04:58:27,545: [Epoch 16 unlabeled Product] loss=2.59551, acc=3199/4175(76.623%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:58:27,545: [Epoch 16 unlabeled Product] loss=2.59551, per-class acc=75.712%
+91.89 92.47 51.72 84.62 92.5 70.69 93.02 71.05 89.47 88.46 82.8 45.9 69.23 72.29 94.37 82.05 95.24 65.79 84.38 94.44 83.58 96.77 60.47 38.82 58.97 100.0 87.04 95.29 82.35 97.87 56.41 78.43 59.57 30.19 73.91 85.29 86.67 82.05 42.53 98.44 90.91 72.73 23.21 15.79 77.78 100.0 37.5 92.5 85.45 89.09 69.89 86.84 71.74 95.35 64.52 77.5 69.89 62.22 76.06 85.71 85.45 53.85 64.29 82.76 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:58:43,135: [Epoch 16 unlabeled Clipart] loss=7.69160, acc=2085/4365(47.766%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 04:58:43,135: [Epoch 16 unlabeled Clipart] loss=7.69160, per-class acc=48.168%
+80.0 55.36 28.12 23.47 79.8 64.65 56.16 54.35 65.38 42.42 56.57 37.5 24.24 60.94 66.67 9.76 66.67 17.5 97.56 32.0 75.0 87.5 62.63 37.37 14.75 75.0 66.67 72.46 70.0 42.42 18.87 80.0 66.67 11.27 42.42 67.5 61.84 69.7 34.94 35.0 66.67 72.5 0.0 26.26 7.32 51.72 10.0 36.96 47.5 83.58 85.86 54.67 21.43 4.76 74.42 18.03 34.44 51.67 18.18 68.75 24.24 5.13 25.25 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 04:58:59,102: [Mix up source and target] source acc: 1.0000; target acc: 0.4777 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 04:59:13,765: [Mix up inside target] target acc: 0.4777 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 04:59:13,883: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 04:59:13,883: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 04:59:13,884: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:01:58,754: [Epoch 17 unlabeled Product] loss=2.65913, acc=3191/4175(76.431%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:01:58,755: [Epoch 17 unlabeled Product] loss=2.65913, per-class acc=75.550%
+91.89 94.62 50.0 84.62 92.5 70.69 93.02 69.74 88.16 88.46 82.8 49.18 65.93 73.49 94.37 82.05 93.65 60.53 82.81 94.44 83.58 95.7 60.47 36.47 66.67 100.0 87.04 95.29 82.35 97.87 53.85 78.43 60.64 28.3 79.35 85.29 86.67 82.05 42.53 98.44 90.91 72.73 23.21 15.79 77.78 100.0 32.5 92.5 85.45 89.09 69.89 89.47 71.74 95.35 64.52 77.5 65.59 64.44 76.06 87.5 85.45 53.85 64.29 77.01 84.21 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:02:16,465: [Epoch 17 unlabeled Clipart] loss=7.76023, acc=2085/4365(47.766%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:02:16,465: [Epoch 17 unlabeled Clipart] loss=7.76023, per-class acc=48.078%
+80.0 55.36 28.12 24.49 78.79 64.65 56.16 52.17 65.38 42.42 55.56 35.0 24.24 59.38 66.67 9.76 66.67 17.5 100.0 32.0 75.0 87.5 62.63 37.37 9.84 75.0 66.67 72.46 70.0 42.42 24.53 82.5 66.67 11.27 48.48 67.5 61.84 69.7 36.14 35.0 68.63 67.5 0.0 25.25 7.32 51.72 7.5 36.96 47.5 83.58 85.86 56.0 21.43 4.76 74.42 18.03 32.22 51.67 14.14 68.75 23.23 0.0 31.31 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:02:32,597: [Mix up source and target] source acc: 1.0000; target acc: 0.4777 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:02:47,404: [Mix up inside target] target acc: 0.4777 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:02:47,630: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:02:47,630: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:02:47,631: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:05:46,581: [Epoch 18 unlabeled Product] loss=2.60342, acc=3188/4175(76.359%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:05:46,581: [Epoch 18 unlabeled Product] loss=2.60342, per-class acc=75.289%
+91.89 93.55 50.0 84.62 92.5 70.69 93.02 67.11 86.84 88.46 82.8 44.26 68.13 72.29 94.37 82.05 93.65 60.53 84.38 94.44 86.57 94.62 63.95 37.65 53.85 100.0 87.04 95.29 82.35 97.87 38.46 78.43 59.57 26.42 78.26 85.29 87.78 82.05 43.68 98.44 90.91 72.73 23.21 18.42 77.78 100.0 32.5 92.5 85.45 89.09 70.97 89.47 71.74 95.35 65.59 77.5 64.52 66.67 77.46 85.71 85.45 53.85 66.67 83.91 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:06:00,325: [Epoch 18 unlabeled Clipart] loss=7.63859, acc=2094/4365(47.973%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:06:00,325: [Epoch 18 unlabeled Clipart] loss=7.63859, per-class acc=48.203%
+80.0 55.36 28.12 24.49 78.79 64.65 56.16 50.0 65.38 42.42 56.57 32.5 24.24 60.94 66.67 12.2 66.67 17.5 97.56 32.0 75.0 87.5 65.66 37.37 1.64 75.0 66.67 72.46 70.0 42.42 22.64 80.0 66.67 9.86 43.43 67.5 61.84 70.71 34.94 37.5 68.63 67.5 0.0 32.32 7.32 51.72 10.0 36.96 50.0 83.58 86.87 56.0 21.43 4.76 74.42 18.03 31.11 55.0 20.2 68.75 24.24 2.56 30.3 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:06:16,538: [Mix up source and target] source acc: 1.0000; target acc: 0.4797 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:06:32,325: [Mix up inside target] target acc: 0.4797 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:06:32,415: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:06:32,416: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:06:32,416: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:09:22,978: [Epoch 19 unlabeled Product] loss=2.73334, acc=3164/4175(75.784%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:09:22,979: [Epoch 19 unlabeled Product] loss=2.73334, per-class acc=74.886%
+91.89 93.55 51.72 84.62 92.5 70.69 93.02 61.84 92.11 88.46 82.8 49.18 69.23 62.65 94.37 82.05 95.24 60.53 82.81 94.44 82.09 94.62 59.3 38.82 58.97 98.41 87.04 95.29 82.35 97.87 41.03 76.47 59.57 28.3 71.74 85.29 86.67 82.05 39.08 98.44 90.91 72.73 23.21 15.79 77.78 100.0 32.5 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 66.67 64.44 78.87 87.5 85.45 53.85 66.67 77.01 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:09:35,727: [Epoch 19 unlabeled Clipart] loss=7.78103, acc=2102/4365(48.156%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:09:35,727: [Epoch 19 unlabeled Clipart] loss=7.78103, per-class acc=48.617%
+80.0 55.36 28.12 24.49 78.79 64.65 56.16 54.35 65.38 42.42 56.57 37.5 24.24 56.25 66.67 12.2 66.67 17.5 97.56 32.0 75.0 87.5 64.65 38.38 6.56 75.0 66.67 72.46 70.0 42.42 30.19 80.0 66.67 11.27 42.42 67.5 61.84 70.71 32.53 42.5 68.63 67.5 0.0 28.28 7.32 50.57 20.0 36.96 50.0 83.58 86.87 56.0 21.43 4.76 74.42 18.03 32.22 53.33 22.22 68.75 24.24 5.13 28.28 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:09:53,015: [Mix up source and target] source acc: 1.0000; target acc: 0.4816 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:10:10,440: [Mix up inside target] target acc: 0.4816 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:10:10,542: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:10:10,542: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:10:10,543: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:12:59,322: [Epoch 20 unlabeled Product] loss=2.65823, acc=3195/4175(76.527%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:12:59,323: [Epoch 20 unlabeled Product] loss=2.65823, per-class acc=75.488%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 73.68 90.79 88.46 82.8 54.1 69.23 67.47 94.37 82.05 93.65 60.53 85.94 94.44 83.58 95.7 66.28 40.0 53.85 100.0 87.04 95.29 80.88 97.87 43.59 78.43 59.57 28.3 78.26 85.29 87.78 84.62 37.93 98.44 90.91 72.73 23.21 15.79 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 64.44 76.06 87.5 85.45 53.85 66.67 81.61 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:13:11,217: [Epoch 20 unlabeled Clipart] loss=7.69766, acc=2098/4365(48.064%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:13:11,218: [Epoch 20 unlabeled Clipart] loss=7.69766, per-class acc=48.571%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 37.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 39.39 3.28 75.0 66.67 72.46 70.0 41.41 16.98 80.0 66.67 11.27 42.42 65.0 61.84 69.7 30.12 42.5 68.63 67.5 0.0 29.29 7.32 50.57 30.0 39.13 50.0 83.58 86.87 56.0 21.43 4.76 74.42 18.03 33.33 55.0 21.21 68.75 24.24 7.69 28.28 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:13:27,028: [Mix up source and target] source acc: 1.0000; target acc: 0.4806 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:13:42,588: [Mix up inside target] target acc: 0.4806 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:13:42,929: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:13:42,929: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:13:42,930: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:16:30,686: [Epoch 21 unlabeled Product] loss=2.79842, acc=3190/4175(76.407%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:16:30,687: [Epoch 21 unlabeled Product] loss=2.79842, per-class acc=75.495%
+91.89 91.4 51.72 84.62 92.5 68.97 93.02 73.68 90.79 88.46 82.8 49.18 69.23 71.08 94.37 82.05 93.65 60.53 85.94 94.44 83.58 96.77 62.79 35.29 61.54 100.0 87.04 95.29 73.53 97.87 51.28 78.43 59.57 30.19 77.17 85.29 86.67 84.62 39.08 98.44 90.91 72.73 23.21 15.79 77.78 100.0 35.0 90.0 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 68.82 64.44 77.46 87.5 85.45 53.85 66.67 78.16 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:16:42,479: [Epoch 21 unlabeled Clipart] loss=7.85807, acc=2092/4365(47.927%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:16:42,480: [Epoch 21 unlabeled Clipart] loss=7.85807, per-class acc=48.554%
+80.0 53.57 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 37.5 24.24 59.38 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 34.34 9.84 75.0 66.67 72.46 70.0 42.42 30.19 80.0 66.67 11.27 42.42 65.0 61.84 70.71 30.12 42.5 68.63 67.5 0.0 20.2 7.32 50.57 25.0 34.78 50.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 33.33 53.33 20.2 68.75 23.23 7.69 28.28 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:16:57,206: [Mix up source and target] source acc: 1.0000; target acc: 0.4793 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:17:10,833: [Mix up inside target] target acc: 0.4793 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:17:10,939: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:17:10,939: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:17:10,940: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:20:01,042: [Epoch 22 unlabeled Product] loss=3.00173, acc=3163/4175(75.760%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:20:01,043: [Epoch 22 unlabeled Product] loss=3.00173, per-class acc=74.976%
+91.89 93.55 51.72 84.62 92.5 68.97 93.02 64.47 90.79 88.46 82.8 44.26 69.23 61.45 94.37 82.05 93.65 60.53 85.94 94.44 82.09 96.77 54.65 35.29 66.67 100.0 87.04 95.29 82.35 97.87 43.59 78.43 59.57 28.3 70.65 85.29 86.67 82.05 37.93 98.44 90.91 72.73 23.21 15.79 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 65.59 77.5 66.67 66.67 76.06 87.5 85.45 53.85 66.67 79.31 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:20:11,016: [Epoch 22 unlabeled Clipart] loss=8.21547, acc=2096/4365(48.018%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:20:11,017: [Epoch 22 unlabeled Clipart] loss=8.21547, per-class acc=48.738%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 37.5 24.24 57.81 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 64.65 36.36 9.84 75.0 65.66 72.46 70.0 37.37 18.87 80.0 66.67 11.27 42.42 65.0 61.84 70.71 31.33 50.0 68.63 67.5 0.0 24.24 7.32 50.57 35.0 39.13 52.5 83.58 86.87 56.0 21.43 4.76 74.42 18.03 32.22 53.33 22.22 68.75 25.25 7.69 26.26 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:20:24,849: [Mix up source and target] source acc: 1.0000; target acc: 0.4802 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:20:37,800: [Mix up inside target] target acc: 0.4802 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:20:37,899: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:20:37,899: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:20:37,900: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:23:29,394: [Epoch 23 unlabeled Product] loss=3.02987, acc=3159/4175(75.665%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:23:29,395: [Epoch 23 unlabeled Product] loss=3.02987, per-class acc=74.953%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 68.42 90.79 88.46 82.8 44.26 68.13 62.65 94.37 82.05 93.65 60.53 82.81 94.44 83.58 96.77 54.65 36.47 69.23 100.0 87.04 95.29 79.41 97.87 41.03 78.43 59.57 28.3 66.3 85.29 86.67 84.62 37.93 98.44 90.91 72.73 23.21 15.79 77.78 100.0 37.5 92.5 85.45 89.09 70.97 86.84 71.74 95.35 65.59 77.5 64.52 62.22 78.87 87.5 85.45 56.41 69.05 77.01 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:23:39,415: [Epoch 23 unlabeled Clipart] loss=8.23462, acc=2108/4365(48.293%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:23:39,416: [Epoch 23 unlabeled Clipart] loss=8.23462, per-class acc=49.052%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 40.0 24.24 56.25 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 62.63 36.36 14.75 75.0 66.67 72.46 70.0 42.42 18.87 80.0 66.67 11.27 41.41 67.5 61.84 70.71 28.92 47.5 68.63 67.5 0.0 26.26 7.32 50.57 42.5 39.13 52.5 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 23.23 68.75 24.24 7.69 28.28 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:23:51,123: [Mix up source and target] source acc: 1.0000; target acc: 0.4829 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:24:02,126: [Mix up inside target] target acc: 0.4829 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:24:02,213: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:24:02,213: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:24:02,214: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:26:43,830: [Epoch 24 unlabeled Product] loss=2.86862, acc=3174/4175(76.024%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:26:43,831: [Epoch 24 unlabeled Product] loss=2.86862, per-class acc=75.184%
+91.89 93.55 50.0 84.62 92.5 67.24 93.02 65.79 90.79 88.46 82.8 49.18 68.13 65.06 94.37 82.05 93.65 60.53 85.94 94.44 82.09 96.77 55.81 36.47 58.97 100.0 87.04 95.29 80.88 97.87 48.72 78.43 59.57 28.3 76.09 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 83.64 89.09 70.97 86.84 71.74 95.35 64.52 77.5 68.82 66.67 78.87 87.5 85.45 53.85 69.05 77.01 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:26:52,069: [Epoch 24 unlabeled Clipart] loss=7.98374, acc=2100/4365(48.110%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:26:52,070: [Epoch 24 unlabeled Clipart] loss=7.98374, per-class acc=48.803%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 52.17 65.38 42.42 56.57 45.0 24.24 56.25 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 35.35 8.2 75.0 65.66 72.46 70.0 42.42 15.09 80.0 66.67 11.27 41.41 67.5 61.84 70.71 28.92 45.0 68.63 67.5 0.0 29.29 7.32 50.57 42.5 36.96 47.5 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 24.24 7.69 26.26 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:27:04,407: [Mix up source and target] source acc: 1.0000; target acc: 0.4811 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:27:16,478: [Mix up inside target] target acc: 0.4811 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:27:16,582: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:27:16,582: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:27:16,582: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:29:57,617: [Epoch 25 unlabeled Product] loss=2.91639, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:29:57,618: [Epoch 25 unlabeled Product] loss=2.91639, per-class acc=74.854%
+91.89 92.47 51.72 84.62 92.5 68.97 93.02 63.16 90.79 88.46 82.8 44.26 69.23 62.65 94.37 82.05 93.65 57.89 85.94 94.44 83.58 96.77 55.81 36.47 69.23 100.0 87.04 95.29 79.41 97.87 38.46 78.43 59.57 28.3 66.3 85.29 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 37.5 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 66.67 64.44 76.06 87.5 85.45 53.85 69.05 77.01 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:30:06,061: [Epoch 25 unlabeled Clipart] loss=7.93491, acc=2106/4365(48.247%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:30:06,062: [Epoch 25 unlabeled Clipart] loss=7.93491, per-class acc=48.919%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 45.0 23.23 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 37.37 13.11 75.0 66.67 72.46 70.0 42.42 11.32 80.0 66.67 11.27 41.41 65.0 61.84 70.71 27.71 47.5 68.63 65.0 0.0 30.3 7.32 50.57 42.5 39.13 50.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 22.22 67.5 25.25 7.69 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:30:19,215: [Mix up source and target] source acc: 1.0000; target acc: 0.4825 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:30:32,090: [Mix up inside target] target acc: 0.4825 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:30:32,177: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:30:32,177: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:30:32,178: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:33:24,820: [Epoch 26 unlabeled Product] loss=2.55566, acc=3167/4175(75.856%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:33:24,821: [Epoch 26 unlabeled Product] loss=2.55566, per-class acc=75.049%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 73.68 90.79 88.46 82.8 45.9 69.23 63.86 94.37 80.77 93.65 60.53 85.94 94.44 82.09 96.77 58.14 36.47 66.67 100.0 87.04 95.29 80.88 97.87 48.72 78.43 59.57 28.3 75.0 64.71 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 90.0 85.45 89.09 69.89 86.84 71.74 95.35 63.44 77.5 73.12 64.44 74.65 87.5 85.45 56.41 69.05 77.01 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:33:35,092: [Epoch 26 unlabeled Clipart] loss=7.42949, acc=2097/4365(48.041%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:33:35,092: [Epoch 26 unlabeled Clipart] loss=7.42949, per-class acc=48.581%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 45.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 9.84 75.0 66.67 72.46 70.0 42.42 15.09 80.0 66.67 11.27 41.41 45.0 61.84 70.71 28.92 45.0 68.63 67.5 0.0 31.31 7.32 50.57 37.5 39.13 52.5 82.09 86.87 56.0 21.43 7.14 74.42 18.03 33.33 53.33 22.22 68.75 23.23 7.69 26.26 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:33:48,341: [Mix up source and target] source acc: 1.0000; target acc: 0.4804 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:34:01,560: [Mix up inside target] target acc: 0.4804 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:34:01,670: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:34:01,670: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:34:01,671: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:36:55,897: [Epoch 27 unlabeled Product] loss=2.91237, acc=3157/4175(75.617%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:36:55,898: [Epoch 27 unlabeled Product] loss=2.91237, per-class acc=74.757%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 68.42 90.79 88.46 82.8 45.9 69.23 59.04 94.37 82.05 93.65 60.53 85.94 94.44 82.09 96.77 55.81 34.12 69.23 100.0 87.04 95.29 79.41 97.87 30.77 78.43 59.57 28.3 77.17 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 60.0 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:37:10,631: [Epoch 27 unlabeled Clipart] loss=7.78449, acc=2105/4365(48.225%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:37:10,631: [Epoch 27 unlabeled Clipart] loss=7.78449, per-class acc=48.994%
+81.67 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 45.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 37.37 13.11 75.0 66.67 72.46 70.0 42.42 11.32 80.0 66.67 12.68 42.42 62.5 61.84 70.71 28.92 50.0 68.63 65.0 0.0 22.22 7.32 50.57 45.0 39.13 55.0 83.58 86.87 56.0 21.43 4.76 74.42 18.03 32.22 53.33 23.23 67.5 24.24 10.26 26.26 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:37:25,562: [Mix up source and target] source acc: 1.0000; target acc: 0.4822 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:37:39,317: [Mix up inside target] target acc: 0.4822 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:37:39,434: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:37:39,434: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:37:39,435: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:40:24,210: [Epoch 28 unlabeled Product] loss=2.97418, acc=3159/4175(75.665%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:40:24,211: [Epoch 28 unlabeled Product] loss=2.97418, per-class acc=74.785%
+91.89 93.55 51.72 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 54.22 94.37 80.77 93.65 60.53 85.94 94.44 82.09 96.77 58.14 36.47 66.67 100.0 87.04 95.29 77.94 97.87 33.33 78.43 59.57 26.42 73.91 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 37.5 90.0 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 70.97 57.78 76.06 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:40:38,816: [Epoch 28 unlabeled Clipart] loss=7.94015, acc=2110/4365(48.339%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:40:38,817: [Epoch 28 unlabeled Clipart] loss=7.94015, per-class acc=49.131%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 52.17 65.38 42.42 56.57 45.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 13.11 75.0 66.67 72.46 70.0 42.42 15.09 80.0 66.67 11.27 41.41 65.0 61.84 70.71 27.71 57.5 68.63 65.0 0.0 27.27 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 22.22 68.75 24.24 7.69 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:40:59,980: [Mix up source and target] source acc: 1.0000; target acc: 0.4834 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:41:15,451: [Mix up inside target] target acc: 0.4834 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:41:15,566: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:41:15,567: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:41:15,567: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:43:59,680: [Epoch 29 unlabeled Product] loss=2.83961, acc=3161/4175(75.713%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:43:59,680: [Epoch 29 unlabeled Product] loss=2.83961, per-class acc=74.811%
+91.89 92.47 50.0 84.62 92.5 68.97 93.02 67.11 90.79 88.46 82.8 44.26 69.23 60.24 94.37 82.05 93.65 57.89 85.94 94.44 83.58 96.77 56.98 38.82 66.67 100.0 87.04 95.29 77.94 97.87 30.77 78.43 59.57 26.42 78.26 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 37.5 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 66.67 60.0 76.06 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:44:12,416: [Epoch 29 unlabeled Clipart] loss=7.79542, acc=2106/4365(48.247%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:44:12,417: [Epoch 29 unlabeled Clipart] loss=7.79542, per-class acc=49.038%
+80.0 55.36 28.12 24.49 78.79 64.65 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 13.11 75.0 66.67 72.46 70.0 42.42 11.32 80.0 66.67 11.27 42.42 65.0 61.84 70.71 27.71 57.5 68.63 65.0 0.0 23.23 7.32 50.57 42.5 39.13 52.5 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:44:29,197: [Mix up source and target] source acc: 1.0000; target acc: 0.4825 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:44:44,969: [Mix up inside target] target acc: 0.4825 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:44:45,053: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:44:45,053: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:44:45,054: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:47:29,790: [Epoch 30 unlabeled Product] loss=2.91938, acc=3155/4175(75.569%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:47:29,790: [Epoch 30 unlabeled Product] loss=2.91938, per-class acc=74.742%
+91.89 92.47 50.0 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 55.42 94.37 79.49 93.65 57.89 85.94 94.44 83.58 96.77 53.49 36.47 61.54 100.0 87.04 95.29 76.47 97.87 43.59 78.43 59.57 26.42 79.35 83.82 86.67 84.62 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 60.0 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:47:42,070: [Epoch 30 unlabeled Clipart] loss=7.90528, acc=2111/4365(48.362%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:47:42,070: [Epoch 30 unlabeled Clipart] loss=7.90528, per-class acc=49.176%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 40.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 65.66 36.36 13.11 75.0 66.67 72.46 70.0 42.42 18.87 80.0 66.67 12.68 43.43 65.0 61.84 70.71 27.71 57.5 68.63 65.0 0.0 24.24 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:47:58,856: [Mix up source and target] source acc: 1.0000; target acc: 0.4836 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:48:16,178: [Mix up inside target] target acc: 0.4836 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:48:16,280: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:48:16,280: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:48:16,281: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:51:07,237: [Epoch 31 unlabeled Product] loss=3.03789, acc=3152/4175(75.497%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:51:07,238: [Epoch 31 unlabeled Product] loss=3.03789, per-class acc=74.704%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 67.11 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 55.26 85.94 94.44 82.09 96.77 53.49 34.12 69.23 100.0 87.04 95.29 72.06 97.87 46.15 78.43 59.57 26.42 82.61 83.82 86.67 84.62 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 57.78 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:51:19,348: [Epoch 31 unlabeled Clipart] loss=8.07357, acc=2123/4365(48.637%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:51:19,348: [Epoch 31 unlabeled Clipart] loss=8.07357, per-class acc=49.465%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 45.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 65.66 36.36 13.11 75.0 66.67 72.46 70.0 42.42 24.53 80.0 66.67 11.27 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 32.32 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 20.2 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:51:35,020: [Mix up source and target] source acc: 1.0000; target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:51:51,131: [Mix up inside target] target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:51:51,378: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:51:51,378: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:51:51,379: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:54:49,239: [Epoch 32 unlabeled Product] loss=2.86394, acc=3148/4175(75.401%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:54:49,240: [Epoch 32 unlabeled Product] loss=2.86394, per-class acc=74.585%
+91.89 92.47 50.0 84.62 92.5 68.97 93.02 65.79 90.79 88.46 82.8 44.26 69.23 59.04 94.37 79.49 93.65 60.53 85.94 94.44 82.09 96.77 54.65 36.47 66.67 100.0 87.04 95.29 73.53 97.87 38.46 78.43 59.57 26.42 76.09 83.82 86.67 84.62 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 90.0 83.64 89.09 70.97 86.84 71.74 95.35 64.52 77.5 67.74 60.0 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:55:01,722: [Epoch 32 unlabeled Clipart] loss=7.71904, acc=2117/4365(48.499%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:55:01,723: [Epoch 32 unlabeled Clipart] loss=7.71904, per-class acc=49.293%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 65.66 37.37 9.84 75.0 66.67 72.46 70.0 42.42 22.64 80.0 66.67 11.27 41.41 65.0 61.84 70.71 27.71 57.5 68.63 65.0 0.0 31.31 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 22.22 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:55:18,030: [Mix up source and target] source acc: 1.0000; target acc: 0.4850 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:55:31,315: [Mix up inside target] target acc: 0.4850 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:55:31,433: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:55:31,433: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:55:31,434: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 05:58:32,092: [Epoch 33 unlabeled Product] loss=2.72251, acc=3149/4175(75.425%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:58:32,092: [Epoch 33 unlabeled Product] loss=2.72251, per-class acc=74.735%
+91.89 92.47 50.0 84.62 92.5 68.97 93.02 59.21 90.79 88.46 82.8 44.26 69.23 55.42 94.37 79.49 93.65 60.53 85.94 94.44 82.09 96.77 53.49 36.47 66.67 100.0 87.04 95.29 75.0 97.87 48.72 78.43 59.57 26.42 79.35 83.82 86.67 84.62 36.78 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 66.67 62.22 74.65 87.5 87.27 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:58:45,958: [Epoch 33 unlabeled Clipart] loss=7.36813, acc=2118/4365(48.522%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 05:58:45,959: [Epoch 33 unlabeled Clipart] loss=7.36813, per-class acc=49.307%
+80.0 55.36 28.12 24.49 78.79 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 65.66 38.38 13.11 75.0 66.67 72.46 70.0 42.42 22.64 80.0 66.67 12.68 43.43 65.0 61.84 70.71 27.71 57.5 68.63 65.0 0.0 29.29 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 20.2 67.5 25.25 7.69 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 05:59:00,278: [Mix up source and target] source acc: 0.9962; target acc: 0.4852 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 05:59:15,264: [Mix up inside target] target acc: 0.4852 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 05:59:15,360: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 05:59:15,360: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 05:59:15,361: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:02:12,848: [Epoch 34 unlabeled Product] loss=2.85548, acc=3149/4175(75.425%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:02:12,848: [Epoch 34 unlabeled Product] loss=2.85548, per-class acc=74.514%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 69.74 90.79 88.46 82.8 45.9 69.23 56.63 94.37 80.77 93.65 57.89 85.94 94.44 82.09 96.77 54.65 36.47 69.23 100.0 87.04 95.29 72.06 97.87 23.08 78.43 59.57 26.42 80.43 83.82 86.67 84.62 36.78 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 66.67 57.78 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:02:24,820: [Epoch 34 unlabeled Clipart] loss=7.75766, acc=2114/4365(48.431%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:02:24,821: [Epoch 34 unlabeled Clipart] loss=7.75766, per-class acc=49.264%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 45.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 65.66 36.36 13.11 75.0 66.67 72.46 70.0 42.42 15.09 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 28.28 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 24.24 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:02:39,047: [Mix up source and target] source acc: 0.9962; target acc: 0.4843 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:02:54,437: [Mix up inside target] target acc: 0.4843 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:02:54,729: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:02:54,731: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:02:54,731: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:06:00,389: [Epoch 35 unlabeled Product] loss=2.96367, acc=3163/4175(75.760%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:06:00,390: [Epoch 35 unlabeled Product] loss=2.96367, per-class acc=74.984%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 60.53 85.94 94.44 82.09 96.77 53.49 37.65 71.79 100.0 87.04 95.29 79.41 97.87 46.15 78.43 59.57 26.42 81.52 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 63.44 57.78 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:06:11,857: [Epoch 35 unlabeled Clipart] loss=7.87132, acc=2123/4365(48.637%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:06:11,858: [Epoch 35 unlabeled Clipart] loss=7.87132, per-class acc=49.499%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 37.37 14.75 75.0 66.67 72.46 70.0 42.42 30.19 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 27.27 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 24.24 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:06:25,564: [Mix up source and target] source acc: 1.0000; target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:06:41,617: [Mix up inside target] target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:06:41,707: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:06:41,707: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:06:41,708: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:09:39,127: [Epoch 36 unlabeled Product] loss=2.90662, acc=3163/4175(75.760%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:09:39,128: [Epoch 36 unlabeled Product] loss=2.90662, per-class acc=74.954%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 57.89 85.94 94.44 82.09 96.77 55.81 35.29 71.79 100.0 87.04 95.29 73.53 97.87 46.15 78.43 59.57 26.42 84.78 83.82 86.67 84.62 36.78 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 66.67 57.78 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:09:50,650: [Epoch 36 unlabeled Clipart] loss=7.77842, acc=2124/4365(48.660%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:09:50,651: [Epoch 36 unlabeled Clipart] loss=7.77842, per-class acc=49.514%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 14.75 75.0 66.67 72.46 70.0 42.42 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 30.3 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 51.67 21.21 67.5 24.24 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:10:06,197: [Mix up source and target] source acc: 0.9962; target acc: 0.4866 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:10:23,768: [Mix up inside target] target acc: 0.4866 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:10:23,923: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:10:23,923: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:10:23,924: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:13:28,937: [Epoch 37 unlabeled Product] loss=2.96252, acc=3161/4175(75.713%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:13:28,938: [Epoch 37 unlabeled Product] loss=2.96252, per-class acc=74.937%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 69.74 90.79 88.46 82.8 44.26 69.23 57.83 94.37 80.77 93.65 60.53 85.94 94.44 82.09 96.77 53.49 35.29 71.79 100.0 87.04 95.29 77.94 97.87 46.15 78.43 59.57 26.42 81.52 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 57.78 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:13:40,428: [Epoch 37 unlabeled Clipart] loss=7.84200, acc=2123/4365(48.637%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:13:40,429: [Epoch 37 unlabeled Clipart] loss=7.84200, per-class acc=49.445%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 14.75 75.0 66.67 72.46 70.0 42.42 22.64 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 31.31 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:13:55,765: [Mix up source and target] source acc: 1.0000; target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:14:12,124: [Mix up inside target] target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:14:12,224: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:14:12,225: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:14:12,225: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:17:25,070: [Epoch 38 unlabeled Product] loss=2.97592, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:17:25,071: [Epoch 38 unlabeled Product] loss=2.97592, per-class acc=74.838%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 45.9 69.23 56.63 94.37 79.49 93.65 60.53 85.94 94.44 80.6 96.77 53.49 34.12 71.79 100.0 87.04 95.29 73.53 97.87 46.15 78.43 59.57 26.42 81.52 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 57.78 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:17:38,029: [Epoch 38 unlabeled Clipart] loss=7.88646, acc=2125/4365(48.683%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:17:38,029: [Epoch 38 unlabeled Clipart] loss=7.88646, per-class acc=49.493%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 14.75 75.0 66.67 72.46 70.0 42.42 26.42 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 34.34 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 51.67 20.2 68.75 24.24 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:17:54,799: [Mix up source and target] source acc: 1.0000; target acc: 0.4868 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:18:12,188: [Mix up inside target] target acc: 0.4868 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:18:12,406: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:18:12,406: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:18:12,407: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:21:15,271: [Epoch 39 unlabeled Product] loss=2.91641, acc=3160/4175(75.689%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:21:15,272: [Epoch 39 unlabeled Product] loss=2.91641, per-class acc=74.924%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 60.53 85.94 94.44 80.6 96.77 53.49 34.12 71.79 100.0 87.04 95.29 77.94 97.87 46.15 78.43 59.57 24.53 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 57.78 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:21:27,842: [Epoch 39 unlabeled Clipart] loss=7.77216, acc=2123/4365(48.637%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:21:27,843: [Epoch 39 unlabeled Clipart] loss=7.77216, per-class acc=49.401%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 14.75 75.0 66.67 72.46 70.0 43.43 15.09 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 34.34 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 55.0 21.21 68.75 24.24 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:21:45,348: [Mix up source and target] source acc: 1.0000; target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:22:04,633: [Mix up inside target] target acc: 0.4864 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:22:04,724: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:22:04,724: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:22:04,725: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:24:58,456: [Epoch 40 unlabeled Product] loss=2.89905, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:24:58,457: [Epoch 40 unlabeled Product] loss=2.89905, per-class acc=74.844%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 34.12 69.23 100.0 87.04 95.29 75.0 97.87 46.15 78.43 59.57 26.42 80.43 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 60.0 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:25:16,142: [Epoch 40 unlabeled Clipart] loss=7.73981, acc=2129/4365(48.774%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:25:16,143: [Epoch 40 unlabeled Clipart] loss=7.73981, per-class acc=49.609%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 38.38 13.11 75.0 66.67 72.46 70.0 42.42 33.96 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 30.3 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:25:36,346: [Mix up source and target] source acc: 1.0000; target acc: 0.4877 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:25:55,209: [Mix up inside target] target acc: 0.4877 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:25:55,307: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:25:55,307: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:25:55,308: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:28:55,285: [Epoch 41 unlabeled Product] loss=2.96070, acc=3161/4175(75.713%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:28:55,286: [Epoch 41 unlabeled Product] loss=2.96070, per-class acc=74.971%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 55.42 94.37 79.49 93.65 60.53 85.94 94.44 80.6 96.77 53.49 36.47 71.79 100.0 87.04 95.29 76.47 97.87 46.15 78.43 59.57 26.42 83.7 83.82 86.67 84.62 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 63.44 57.78 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:29:12,850: [Epoch 41 unlabeled Clipart] loss=7.73358, acc=2132/4365(48.843%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:29:12,851: [Epoch 41 unlabeled Clipart] loss=7.73358, per-class acc=49.600%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 39.39 18.03 75.0 66.67 72.46 70.0 43.43 26.42 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 34.34 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 4.76 74.42 18.03 32.22 51.67 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:29:31,816: [Mix up source and target] source acc: 1.0000; target acc: 0.4884 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:29:49,693: [Mix up inside target] target acc: 0.4884 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:29:49,785: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:29:49,785: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:29:49,785: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:32:52,770: [Epoch 42 unlabeled Product] loss=3.11190, acc=3153/4175(75.521%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:32:52,770: [Epoch 42 unlabeled Product] loss=3.11190, per-class acc=74.796%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 63.16 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 32.94 71.79 100.0 87.04 95.29 77.94 97.87 48.72 78.43 59.57 24.53 83.7 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 57.78 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:33:10,693: [Epoch 42 unlabeled Clipart] loss=8.06928, acc=2134/4365(48.889%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:33:10,694: [Epoch 42 unlabeled Clipart] loss=8.06928, per-class acc=49.688%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 42.42 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 55.0 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 50.0 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:33:29,847: [Mix up source and target] source acc: 1.0000; target acc: 0.4889 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:33:47,602: [Mix up inside target] target acc: 0.4889 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:33:47,714: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:33:47,714: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:33:47,715: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:36:47,989: [Epoch 43 unlabeled Product] loss=2.92197, acc=3160/4175(75.689%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:36:47,989: [Epoch 43 unlabeled Product] loss=2.92197, per-class acc=74.984%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 63.16 85.94 94.44 80.6 96.77 54.65 32.94 71.79 100.0 87.04 95.29 75.0 97.87 48.72 78.43 59.57 26.42 83.7 83.82 86.67 84.62 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 63.44 57.78 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:37:01,290: [Epoch 43 unlabeled Clipart] loss=7.73919, acc=2136/4365(48.935%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:37:01,291: [Epoch 43 unlabeled Clipart] loss=7.73919, per-class acc=49.759%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 45.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 21.31 75.0 66.67 72.46 70.0 43.43 33.96 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:37:19,946: [Mix up source and target] source acc: 1.0000; target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:37:35,688: [Mix up inside target] target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:37:35,809: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:37:35,809: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:37:35,810: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:40:36,977: [Epoch 44 unlabeled Product] loss=2.94935, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:40:36,978: [Epoch 44 unlabeled Product] loss=2.94935, per-class acc=74.843%
+91.89 93.55 50.0 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 77.94 97.87 46.15 78.43 59.57 22.64 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 57.78 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:40:53,493: [Epoch 44 unlabeled Clipart] loss=7.76338, acc=2130/4365(48.797%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:40:53,494: [Epoch 44 unlabeled Clipart] loss=7.76338, per-class acc=49.589%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 19.67 75.0 66.67 72.46 70.0 43.43 28.3 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 34.34 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 22.22 67.5 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:41:11,291: [Mix up source and target] source acc: 1.0000; target acc: 0.4880 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:41:27,433: [Mix up inside target] target acc: 0.4880 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:41:27,550: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:41:27,551: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:41:27,551: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:44:48,615: [Epoch 45 unlabeled Product] loss=2.98121, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:44:48,615: [Epoch 45 unlabeled Product] loss=2.98121, per-class acc=74.853%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 54.22 94.37 80.77 93.65 65.79 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 77.94 97.87 43.59 78.43 59.57 22.64 83.7 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 57.78 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:45:01,094: [Epoch 45 unlabeled Clipart] loss=7.86855, acc=2133/4365(48.866%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:45:01,095: [Epoch 45 unlabeled Clipart] loss=7.86855, per-class acc=49.673%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 18.03 75.0 66.67 72.46 70.0 43.43 30.19 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 34.34 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:45:17,318: [Mix up source and target] source acc: 1.0000; target acc: 0.4887 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:45:32,955: [Mix up inside target] target acc: 0.4887 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:45:33,089: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:45:33,089: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:45:33,090: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:48:37,405: [Epoch 46 unlabeled Product] loss=3.09373, acc=3154/4175(75.545%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:48:37,405: [Epoch 46 unlabeled Product] loss=3.09373, per-class acc=74.825%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 55.42 94.37 80.77 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 77.94 97.87 48.72 78.43 59.57 22.64 82.61 83.82 86.67 84.62 36.78 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:48:50,889: [Epoch 46 unlabeled Clipart] loss=7.93247, acc=2136/4365(48.935%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:48:50,890: [Epoch 46 unlabeled Clipart] loss=7.93247, per-class acc=49.783%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 45.0 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 18.03 75.0 66.67 72.46 70.0 43.43 35.85 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 33.33 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:49:09,695: [Mix up source and target] source acc: 0.9962; target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:49:27,772: [Mix up inside target] target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:49:27,875: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:49:27,875: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:49:27,876: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:52:37,517: [Epoch 47 unlabeled Product] loss=3.06894, acc=3153/4175(75.521%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:52:37,518: [Epoch 47 unlabeled Product] loss=3.06894, per-class acc=74.765%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 69.74 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 79.41 97.87 46.15 78.43 59.57 22.64 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:52:50,763: [Epoch 47 unlabeled Clipart] loss=7.87319, acc=2131/4365(48.820%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:52:50,763: [Epoch 47 unlabeled Clipart] loss=7.87319, per-class acc=49.632%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 18.03 75.0 66.67 72.46 70.0 43.43 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 34.34 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 50.0 21.21 67.5 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:53:07,471: [Mix up source and target] source acc: 1.0000; target acc: 0.4882 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:53:23,037: [Mix up inside target] target acc: 0.4882 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:53:23,159: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:53:23,159: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:53:23,160: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 06:56:40,370: [Epoch 48 unlabeled Product] loss=3.03081, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:56:40,370: [Epoch 48 unlabeled Product] loss=3.03081, per-class acc=74.844%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 82.05 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 77.94 97.87 46.15 78.43 59.57 22.64 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 56.41 69.05 74.71 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:56:51,914: [Epoch 48 unlabeled Clipart] loss=7.76571, acc=2134/4365(48.889%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 06:56:51,915: [Epoch 48 unlabeled Clipart] loss=7.76571, per-class acc=49.692%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 21.31 75.0 66.67 72.46 70.0 43.43 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 06:57:08,484: [Mix up source and target] source acc: 1.0000; target acc: 0.4889 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 06:57:23,683: [Mix up inside target] target acc: 0.4889 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 06:57:23,892: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 06:57:23,893: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 06:57:23,893: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:00:32,480: [Epoch 49 unlabeled Product] loss=3.02798, acc=3157/4175(75.617%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:00:32,481: [Epoch 49 unlabeled Product] loss=3.02798, per-class acc=74.903%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 68.42 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 79.41 97.87 48.72 78.43 59.57 24.53 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 57.78 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:00:44,743: [Epoch 49 unlabeled Clipart] loss=7.74184, acc=2129/4365(48.774%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:00:44,744: [Epoch 49 unlabeled Clipart] loss=7.74184, per-class acc=49.615%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 16.39 75.0 66.67 72.46 70.0 43.43 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 30.3 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 53.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:01:01,711: [Mix up source and target] source acc: 1.0000; target acc: 0.4877 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:01:20,308: [Mix up inside target] target acc: 0.4877 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:01:20,437: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:01:20,437: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:01:20,438: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:04:42,869: [Epoch 50 unlabeled Product] loss=2.99943, acc=3159/4175(75.665%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:04:42,870: [Epoch 50 unlabeled Product] loss=2.99943, per-class acc=74.912%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 63.16 85.94 94.44 80.6 96.77 56.98 31.76 71.79 100.0 87.04 95.29 77.94 97.87 46.15 78.43 59.57 22.64 82.61 83.82 86.67 82.05 36.78 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 57.78 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:04:54,946: [Epoch 50 unlabeled Clipart] loss=7.76446, acc=2135/4365(48.912%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:04:54,946: [Epoch 50 unlabeled Clipart] loss=7.76446, per-class acc=49.718%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 19.67 75.0 66.67 72.46 70.0 43.43 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 51.67 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:05:09,881: [Mix up source and target] source acc: 0.9962; target acc: 0.4891 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:05:23,789: [Mix up inside target] target acc: 0.4891 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:05:23,877: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:05:23,877: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:05:23,878: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:08:37,983: [Epoch 51 unlabeled Product] loss=3.04559, acc=3159/4175(75.665%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:08:37,984: [Epoch 51 unlabeled Product] loss=3.04559, per-class acc=74.957%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 69.74 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 68.42 85.94 94.44 80.6 96.77 54.65 31.76 71.79 100.0 87.04 95.29 77.94 97.87 48.72 78.43 59.57 22.64 82.61 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:08:48,295: [Epoch 51 unlabeled Clipart] loss=7.82136, acc=2137/4365(48.958%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:08:48,296: [Epoch 51 unlabeled Clipart] loss=7.82136, per-class acc=49.776%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 19.67 75.0 66.67 72.46 70.0 43.43 35.85 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 51.67 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:09:02,943: [Mix up source and target] source acc: 1.0000; target acc: 0.4896 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:09:18,669: [Mix up inside target] target acc: 0.4896 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:09:18,852: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:09:18,852: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:09:18,853: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:12:34,409: [Epoch 52 unlabeled Product] loss=3.05095, acc=3155/4175(75.569%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:12:34,409: [Epoch 52 unlabeled Product] loss=3.05095, per-class acc=74.805%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 79.41 97.87 43.59 78.43 59.57 22.64 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:12:45,613: [Epoch 52 unlabeled Clipart] loss=7.81608, acc=2135/4365(48.912%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:12:45,613: [Epoch 52 unlabeled Clipart] loss=7.81608, per-class acc=49.718%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 19.67 75.0 66.67 72.46 70.0 43.43 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 51.67 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:13:03,221: [Mix up source and target] source acc: 1.0000; target acc: 0.4891 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:13:21,020: [Mix up inside target] target acc: 0.4891 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:13:21,212: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:13:21,214: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:13:21,214: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:16:31,378: [Epoch 53 unlabeled Product] loss=3.05758, acc=3155/4175(75.569%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:16:31,378: [Epoch 53 unlabeled Product] loss=3.05758, per-class acc=74.783%
+91.89 93.55 48.28 84.62 92.5 68.97 90.7 71.05 90.79 88.46 82.8 44.26 69.23 56.63 94.37 82.05 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 77.94 97.87 43.59 78.43 59.57 22.64 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:16:46,295: [Epoch 53 unlabeled Clipart] loss=7.86084, acc=2137/4365(48.958%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:16:46,296: [Epoch 53 unlabeled Clipart] loss=7.86084, per-class acc=49.799%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 65.66 36.36 21.31 75.0 66.67 72.46 70.0 43.43 37.74 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 34.34 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 51.67 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:17:04,614: [Mix up source and target] source acc: 1.0000; target acc: 0.4896 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:17:22,381: [Mix up inside target] target acc: 0.4896 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:17:22,526: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:17:22,526: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:17:22,527: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:20:36,880: [Epoch 54 unlabeled Product] loss=3.00245, acc=3154/4175(75.545%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:20:36,881: [Epoch 54 unlabeled Product] loss=3.00245, per-class acc=74.779%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 77.94 97.87 43.59 78.43 59.57 22.64 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:20:49,139: [Epoch 54 unlabeled Clipart] loss=7.72362, acc=2135/4365(48.912%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:20:49,140: [Epoch 54 unlabeled Clipart] loss=7.72362, per-class acc=49.724%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 43.43 33.96 80.0 66.67 11.27 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:21:06,729: [Mix up source and target] source acc: 1.0000; target acc: 0.4891 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:21:24,329: [Mix up inside target] target acc: 0.4891 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:21:24,431: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:21:24,431: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:21:24,432: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:24:31,818: [Epoch 55 unlabeled Product] loss=2.97016, acc=3159/4175(75.665%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:24:31,819: [Epoch 55 unlabeled Product] loss=2.97016, per-class acc=74.925%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 77.94 97.87 46.15 78.43 59.57 24.53 82.61 83.82 86.67 84.62 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 65.59 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:24:49,208: [Epoch 55 unlabeled Clipart] loss=7.66831, acc=2138/4365(48.981%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:24:49,209: [Epoch 55 unlabeled Clipart] loss=7.66831, per-class acc=49.804%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 43.43 37.74 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:25:07,666: [Mix up source and target] source acc: 1.0000; target acc: 0.4898 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:25:25,633: [Mix up inside target] target acc: 0.4898 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:25:25,726: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:25:25,726: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:25:25,727: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:28:43,825: [Epoch 56 unlabeled Product] loss=3.00362, acc=3147/4175(75.377%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:28:43,826: [Epoch 56 unlabeled Product] loss=3.00362, per-class acc=74.663%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 61.84 90.79 88.46 82.8 44.26 69.23 56.63 94.37 80.77 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 79.41 97.87 46.15 78.43 59.57 22.64 82.61 83.82 86.67 82.05 36.78 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 73.24 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:28:54,017: [Epoch 56 unlabeled Clipart] loss=7.67065, acc=2134/4365(48.889%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:28:54,018: [Epoch 56 unlabeled Clipart] loss=7.67065, per-class acc=49.701%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 43.43 32.08 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 19.19 68.75 26.26 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:29:08,303: [Mix up source and target] source acc: 1.0000; target acc: 0.4889 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:29:23,203: [Mix up inside target] target acc: 0.4889 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:29:23,350: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:29:23,350: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:29:23,351: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:32:40,028: [Epoch 57 unlabeled Product] loss=3.01469, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:32:40,029: [Epoch 57 unlabeled Product] loss=3.01469, per-class acc=74.808%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 54.65 31.76 71.79 100.0 87.04 95.29 77.94 97.87 41.03 78.43 59.57 24.53 82.61 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:32:51,714: [Epoch 57 unlabeled Clipart] loss=7.83901, acc=2136/4365(48.935%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:32:51,714: [Epoch 57 unlabeled Clipart] loss=7.83901, per-class acc=49.746%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 43.43 33.96 80.0 66.67 12.68 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:33:07,805: [Mix up source and target] source acc: 1.0000; target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:33:24,134: [Mix up inside target] target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:33:24,226: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:33:24,226: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:33:24,226: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:36:38,522: [Epoch 58 unlabeled Product] loss=2.89863, acc=3155/4175(75.569%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:36:38,523: [Epoch 58 unlabeled Product] loss=2.89863, per-class acc=74.834%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 75.0 97.87 46.15 78.43 59.57 22.64 82.61 83.82 86.67 84.62 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:36:50,209: [Epoch 58 unlabeled Clipart] loss=7.56090, acc=2136/4365(48.935%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:36:50,209: [Epoch 58 unlabeled Clipart] loss=7.56090, per-class acc=49.753%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 43.43 35.85 80.0 66.67 11.27 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:37:08,105: [Mix up source and target] source acc: 1.0000; target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:37:26,817: [Mix up inside target] target acc: 0.4893 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:37:26,919: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:37:26,920: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:37:26,920: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:40:38,866: [Epoch 59 unlabeled Product] loss=3.09400, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:40:38,867: [Epoch 59 unlabeled Product] loss=3.09400, per-class acc=74.843%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 71.05 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 79.41 97.87 43.59 78.43 59.57 26.42 82.61 83.82 86.67 82.05 37.93 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 56.41 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:40:51,419: [Epoch 59 unlabeled Clipart] loss=7.81026, acc=2133/4365(48.866%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:40:51,420: [Epoch 59 unlabeled Clipart] loss=7.81026, per-class acc=49.666%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 43.43 30.19 80.0 66.67 11.27 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 32.22 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:41:09,274: [Mix up source and target] source acc: 1.0000; target acc: 0.4887 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-10 07:41:25,157: [Mix up inside target] target acc: 0.4887 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-10 07:41:25,240: source loader batches: 69 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:599
+[INFO] 2022-09-10 07:41:25,240: target loader batches: 68 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:600
+[INFO] 2022-09-10 07:41:25,241: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:948
+[INFO] 2022-09-10 07:44:39,149: [Epoch 60 unlabeled Product] loss=3.11898, acc=3156/4175(75.593%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:44:39,150: [Epoch 60 unlabeled Product] loss=3.11898, per-class acc=74.823%
+91.89 93.55 48.28 84.62 92.5 68.97 93.02 72.37 90.79 88.46 82.8 44.26 69.23 56.63 94.37 79.49 93.65 63.16 85.94 94.44 80.6 96.77 53.49 31.76 71.79 100.0 87.04 95.29 79.41 97.87 46.15 78.43 59.57 22.64 82.61 83.82 86.67 82.05 39.08 98.44 90.91 72.73 23.21 18.42 77.78 100.0 35.0 92.5 85.45 89.09 70.97 86.84 71.74 95.35 64.52 77.5 64.52 55.56 74.65 87.5 85.45 53.85 69.05 75.86 83.16 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:44:53,294: [Epoch 60 unlabeled Clipart] loss=7.81810, acc=2137/4365(48.958%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1054
+[INFO] 2022-09-10 07:44:53,295: [Epoch 60 unlabeled Clipart] loss=7.81810, per-class acc=49.770%
+80.0 55.36 28.12 24.49 77.78 63.64 56.16 54.35 65.38 42.42 56.57 42.5 24.24 54.69 66.67 12.2 66.67 17.5 100.0 32.0 75.0 87.5 66.67 36.36 22.95 75.0 66.67 72.46 70.0 43.43 35.85 80.0 66.67 11.27 43.43 67.5 61.84 70.71 27.71 57.5 68.63 65.0 0.0 35.35 7.32 50.57 42.5 39.13 55.0 83.58 86.87 56.0 21.43 7.14 74.42 18.03 33.33 48.33 21.21 68.75 25.25 10.26 27.27 67.92 62.5 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1057
+[INFO] 2022-09-10 07:44:53,299: accuracy not improved in 4 epoches, stopped in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:156
+[INFO] 2022-09-10 07:44:53,421: Best Val acc at 55: 0.49 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:208
+[INFO] 2022-09-10 07:44:53,421: End at time: 2022.09.10-07:44:53, total time: 13341s in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:213

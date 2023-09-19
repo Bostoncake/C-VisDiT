@@ -1,0 +1,145 @@
+[INFO] 2022-09-19 20:55:07,020: Experiment directory is located at ./exps/experiments/office/09-18-W-D-3_target_inside_ratio_0.20_target_inside_confidence_0.75_lambda_target_mixed_0.10 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:123
+[INFO] 2022-09-19 20:55:07,020: Configurations and directories successfully set up. in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:125
+[INFO] 2022-09-19 20:55:07,023: Start at time: 2022.09.19-20:55:07 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:161
+[INFO] 2022-09-19 20:55:07,023: Server: ubuntu-KI4224G in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/setup.py:162
+[INFO] 2022-09-19 20:55:07,157: User specified 1 GPUs: 0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:104
+[INFO] 2022-09-19 20:55:09,960: Program will run on *****GPU-CUDA*****  in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:109
+[INFO] 2022-09-19 20:55:09,960: Python VERSION: 3.7.11 (default, Jul 27 2021, 14:32:16) 
+[GCC 7.5.0] in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:230
+[INFO] 2022-09-19 20:55:09,960: pytorch VERSION: 1.8.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:231
+[INFO] 2022-09-19 20:55:09,960: CUDA VERSION: 11.1 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:232
+[INFO] 2022-09-19 20:55:09,960: CUDNN VERSION: 8005 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:233
+[INFO] 2022-09-19 20:55:09,960: Device NAME: NVIDIA GeForce RTX 3090 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:234
+[INFO] 2022-09-19 20:55:09,960: Number CUDA Devices: 1 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:235
+[INFO] 2022-09-19 20:55:09,960: Available devices: 1 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:236
+[INFO] 2022-09-19 20:55:09,960: current CUDA Device: 0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/utils/torchutils.py:237
+[INFO] 2022-09-19 20:55:09,972: Dataset office, source webcam, target dslr in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:293
+[INFO] 2022-09-19 20:55:09,972: Imagenet pretrained model used in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:301
+[INFO] 2022-09-19 20:55:18,182: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 20:55:18,192: Now training with seed 7646520. in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:131
+[INFO] 2022-09-19 20:55:20,478: [Epoch 0 unlabeled webcam] loss=0.87318, acc=617/702(87.892%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 20:55:20,479: [Epoch 0 unlabeled webcam] loss=0.87318, per-class acc=87.292%
+100.0 100.0 100.0 100.0 100.0 71.43 100.0 93.33 88.89 100.0 100.0 100.0 96.3 68.75 77.78 67.5 96.3 100.0 100.0 100.0 92.31 23.53 77.78 91.67 70.27 37.5 100.0 96.3 71.43 85.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 20:55:23,690: [Epoch 0 unlabeled dslr] loss=0.88800, acc=442/498(88.755%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 20:55:23,690: [Epoch 0 unlabeled dslr] loss=0.88800, per-class acc=89.332%
+100.0 100.0 100.0 91.67 100.0 83.33 100.0 92.86 86.67 100.0 92.31 80.0 95.83 87.5 100.0 72.73 100.0 100.0 100.0 100.0 92.31 20.0 82.61 100.0 80.0 100.0 100.0 100.0 52.38 59.09 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 20:55:28,346: [Mix up source and target] source acc: 1.0000; target acc: 0.8876 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 20:55:32,700: [Mix up inside target] target acc: 0.8876 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 20:55:32,713: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:00:18,511: [Epoch 1 unlabeled webcam] loss=0.30454, acc=639/702(91.026%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:00:18,512: [Epoch 1 unlabeled webcam] loss=0.30454, per-class acc=90.767%
+100.0 100.0 100.0 100.0 100.0 85.71 100.0 100.0 88.89 100.0 100.0 100.0 96.3 93.75 100.0 70.0 100.0 100.0 100.0 100.0 92.31 17.65 81.48 83.33 75.68 62.5 100.0 100.0 76.19 90.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:00:21,597: [Epoch 1 unlabeled dslr] loss=0.31582, acc=457/498(91.767%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:00:21,598: [Epoch 1 unlabeled dslr] loss=0.31582, per-class acc=91.813%
+100.0 100.0 100.0 100.0 100.0 83.33 100.0 100.0 86.67 100.0 100.0 80.0 95.83 93.75 100.0 72.73 100.0 100.0 100.0 100.0 92.31 13.33 95.65 100.0 80.0 100.0 100.0 100.0 57.14 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:00:25,926: [Mix up source and target] source acc: 1.0000; target acc: 0.9177 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:00:30,344: [Mix up inside target] target acc: 0.9177 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:00:30,360: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:05:11,733: [Epoch 2 unlabeled webcam] loss=0.44314, acc=655/702(93.305%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:05:11,733: [Epoch 2 unlabeled webcam] loss=0.44314, per-class acc=94.134%
+100.0 100.0 100.0 100.0 100.0 96.43 100.0 100.0 88.89 100.0 100.0 95.83 96.3 93.75 100.0 67.5 100.0 100.0 100.0 100.0 92.31 52.94 88.89 79.17 75.68 100.0 100.0 100.0 90.48 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:05:15,435: [Epoch 2 unlabeled dslr] loss=0.38856, acc=468/498(93.976%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:05:15,436: [Epoch 2 unlabeled dslr] loss=0.38856, per-class acc=94.432%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 93.75 100.0 72.73 100.0 100.0 100.0 100.0 92.31 46.67 95.65 100.0 90.0 100.0 100.0 100.0 66.67 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:05:20,336: [Mix up source and target] source acc: 1.0000; target acc: 0.9398 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:05:25,122: [Mix up inside target] target acc: 0.9398 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:05:25,137: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:10:09,976: [Epoch 3 unlabeled webcam] loss=0.55436, acc=662/702(94.302%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:10:09,977: [Epoch 3 unlabeled webcam] loss=0.55436, per-class acc=95.573%
+100.0 100.0 100.0 100.0 100.0 96.43 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 85.19 79.17 75.68 100.0 100.0 100.0 90.48 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:10:13,181: [Epoch 3 unlabeled dslr] loss=0.39728, acc=480/498(96.386%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:10:13,182: [Epoch 3 unlabeled dslr] loss=0.39728, per-class acc=96.679%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 86.67 100.0 100.0 90.0 100.0 100.0 100.0 85.71 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:10:17,437: [Mix up source and target] source acc: 1.0000; target acc: 0.9639 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:10:21,631: [Mix up inside target] target acc: 0.9639 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:10:21,645: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:15:06,368: [Epoch 4 unlabeled webcam] loss=0.66029, acc=660/702(94.017%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:15:06,369: [Epoch 4 unlabeled webcam] loss=0.66029, per-class acc=95.501%
+100.0 100.0 100.0 100.0 100.0 92.86 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 92.59 79.17 64.86 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:15:09,519: [Epoch 4 unlabeled dslr] loss=0.40623, acc=483/498(96.988%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:15:09,520: [Epoch 4 unlabeled dslr] loss=0.40623, per-class acc=97.262%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 100.0 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:15:13,737: [Mix up source and target] source acc: 1.0000; target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:15:18,114: [Mix up inside target] target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:15:18,131: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:20:04,864: [Epoch 5 unlabeled webcam] loss=0.75532, acc=657/702(93.590%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:20:04,865: [Epoch 5 unlabeled webcam] loss=0.75532, per-class acc=95.240%
+100.0 100.0 100.0 100.0 100.0 92.86 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 92.59 79.17 56.76 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:20:08,739: [Epoch 5 unlabeled dslr] loss=0.41752, acc=483/498(96.988%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:20:08,740: [Epoch 5 unlabeled dslr] loss=0.41752, per-class acc=97.262%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 100.0 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:20:13,441: [Mix up source and target] source acc: 1.0000; target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:20:17,537: [Mix up inside target] target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:20:17,551: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:25:00,739: [Epoch 6 unlabeled webcam] loss=0.79405, acc=657/702(93.590%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:25:00,740: [Epoch 6 unlabeled webcam] loss=0.79405, per-class acc=95.272%
+100.0 100.0 100.0 100.0 100.0 92.86 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 96.3 79.17 54.05 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:25:03,783: [Epoch 6 unlabeled dslr] loss=0.44160, acc=483/498(96.988%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:25:03,784: [Epoch 6 unlabeled dslr] loss=0.44160, per-class acc=97.262%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 100.0 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:25:08,441: [Mix up source and target] source acc: 1.0000; target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:25:12,679: [Mix up inside target] target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:25:12,693: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:30:04,981: [Epoch 7 unlabeled webcam] loss=0.87204, acc=656/702(93.447%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:30:04,982: [Epoch 7 unlabeled webcam] loss=0.87204, per-class acc=95.189%
+100.0 100.0 100.0 100.0 100.0 89.29 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 100.0 79.17 51.35 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:30:08,261: [Epoch 7 unlabeled dslr] loss=0.46839, acc=483/498(96.988%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:30:08,262: [Epoch 7 unlabeled dslr] loss=0.46839, per-class acc=97.262%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 100.0 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:30:12,576: [Mix up source and target] source acc: 1.0000; target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:30:16,916: [Mix up inside target] target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:30:16,928: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:34:56,815: [Epoch 8 unlabeled webcam] loss=0.90229, acc=653/702(93.020%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:34:56,815: [Epoch 8 unlabeled webcam] loss=0.90229, per-class acc=94.928%
+100.0 100.0 100.0 100.0 100.0 89.29 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 100.0 79.17 43.24 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:34:59,921: [Epoch 8 unlabeled dslr] loss=0.48804, acc=483/498(96.988%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:34:59,921: [Epoch 8 unlabeled dslr] loss=0.48804, per-class acc=97.262%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 100.0 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:35:03,886: [Mix up source and target] source acc: 1.0000; target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:35:07,969: [Mix up inside target] target acc: 0.9699 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:35:07,983: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:39:51,507: [Epoch 9 unlabeled webcam] loss=0.90890, acc=648/702(92.308%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:39:51,508: [Epoch 9 unlabeled webcam] loss=0.90890, per-class acc=94.266%
+100.0 100.0 100.0 100.0 100.0 89.29 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 74.07 79.17 48.65 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:39:54,603: [Epoch 9 unlabeled dslr] loss=0.56229, acc=475/498(95.382%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:39:54,604: [Epoch 9 unlabeled dslr] loss=0.56229, per-class acc=96.140%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 65.22 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:39:58,663: [Mix up source and target] source acc: 1.0000; target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:40:03,168: [Mix up inside target] target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:40:03,183: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:44:41,733: [Epoch 10 unlabeled webcam] loss=1.01252, acc=646/702(92.023%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:44:41,733: [Epoch 10 unlabeled webcam] loss=1.01252, per-class acc=94.091%
+100.0 100.0 100.0 100.0 100.0 89.29 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 74.07 79.17 43.24 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:44:45,549: [Epoch 10 unlabeled dslr] loss=0.65808, acc=475/498(95.382%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:44:45,550: [Epoch 10 unlabeled dslr] loss=0.65808, per-class acc=96.140%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 65.22 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:44:50,313: [Mix up source and target] source acc: 1.0000; target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:44:55,178: [Mix up inside target] target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:44:55,194: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:49:39,285: [Epoch 11 unlabeled webcam] loss=1.08806, acc=646/702(92.023%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:49:39,285: [Epoch 11 unlabeled webcam] loss=1.08806, per-class acc=94.091%
+100.0 100.0 100.0 100.0 100.0 89.29 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 74.07 79.17 43.24 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:49:42,708: [Epoch 11 unlabeled dslr] loss=0.71110, acc=475/498(95.382%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:49:42,708: [Epoch 11 unlabeled dslr] loss=0.71110, per-class acc=96.140%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 65.22 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:49:47,600: [Mix up source and target] source acc: 1.0000; target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:49:51,946: [Mix up inside target] target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:49:51,961: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:54:30,534: [Epoch 12 unlabeled webcam] loss=1.13115, acc=645/702(91.880%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:54:30,535: [Epoch 12 unlabeled webcam] loss=1.13115, per-class acc=94.004%
+100.0 100.0 100.0 100.0 100.0 89.29 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 74.07 79.17 40.54 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:54:33,511: [Epoch 12 unlabeled dslr] loss=0.74539, acc=475/498(95.382%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:54:33,512: [Epoch 12 unlabeled dslr] loss=0.74539, per-class acc=96.140%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 65.22 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:54:37,608: [Mix up source and target] source acc: 1.0000; target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:412
+[INFO] 2022-09-19 21:54:41,721: [Mix up inside target] target acc: 0.9538 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:505
+[INFO] 2022-09-19 21:54:41,735: Load target weights to classifier in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:952
+[INFO] 2022-09-19 21:59:16,823: [Epoch 13 unlabeled webcam] loss=1.07505, acc=646/702(92.023%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:59:16,824: [Epoch 13 unlabeled webcam] loss=1.07505, per-class acc=94.091%
+100.0 100.0 100.0 100.0 100.0 89.29 100.0 93.33 88.89 100.0 100.0 100.0 96.3 100.0 100.0 65.0 100.0 100.0 100.0 100.0 92.31 100.0 74.07 79.17 43.24 100.0 100.0 100.0 95.24 100.0 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:59:19,761: [Epoch 13 unlabeled dslr] loss=0.71208, acc=475/498(95.382%) in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1058
+[INFO] 2022-09-19 21:59:19,762: [Epoch 13 unlabeled dslr] loss=0.71208, per-class acc=96.140%
+100.0 100.0 100.0 100.0 100.0 91.67 100.0 100.0 86.67 100.0 100.0 100.0 95.83 100.0 100.0 72.73 100.0 100.0 100.0 100.0 92.31 100.0 65.22 100.0 90.0 100.0 100.0 100.0 90.48 95.45 100.0 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/CDSAgent.py:1061
+[INFO] 2022-09-19 21:59:19,763: accuracy not improved in 4 epoches, stopped in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:156
+[INFO] 2022-09-19 21:59:19,895: Best Val acc at 8: 0.97 in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:208
+[INFO] 2022-09-19 21:59:19,895: End at time: 2022.09.19-21:59:19, total time: 3852s in /home/xiongyizhe/FUDA/SSL-home/SSL-FUDA/pcs/agents/BaseAgent.py:213

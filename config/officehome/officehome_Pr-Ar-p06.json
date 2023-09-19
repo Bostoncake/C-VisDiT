@@ -1,0 +1,63 @@
+{
+  "exp_base": "./exps",
+  "exp_name": "officehome",
+  "exp_id": "Product->Art:p06",
+  "data_params": {
+    "name": "office_home",
+    "source": "Product",
+    "target": "Art",
+    "fewshot": "p06",
+    "aug": "aug_0"
+  },
+  "num_epochs": 500,
+  "steps_epoch": null,
+  "optim_params": {
+    "learning_rate": 0.01,
+    "conv_lr_ratio": 0.1,
+    "patience": 4,
+    "batch_size_lbd": 32,
+    "batch_size": 64,
+    "decay": true,
+    "weight_decay": 5e-4,
+    "cls_update": true
+  },
+  "model_params": {
+    "out_dim": 512,
+    "version": "pretrain-resnet50",
+    "load_weight": "src-tgt",
+    "load_weight_thres": 10,
+    "load_weight_epoch": 0
+  },
+  "loss_params": {
+    "thres_src": 0.95,
+    "thres_tgt": 0.98,
+    "temp": 0.1,
+    "loss": [
+      "cls-so",
+      "proto-src",
+      "proto-tgt",
+      "I2C-cross",
+      "semi-condentmax",
+      "semi-entmin",
+      "tgt-condentmax",
+      "tgt-entmin"
+    ],
+    "weight": [1, 1, 0.5, 1, 0.5, 0.05, 0.5, 0.05],
+    "clus": {
+      "kmeans_freq": 1,
+      "type": ["each"],
+      "n_k": 15,
+      "k": [65, 130]
+    }
+  },
+  "confidence_params":
+  {
+    "confidence_ratio": 0.75,
+    "lambda_mixed": 1.0,
+    "mixup_alpha": 0.75,
+    "lambda_target_mixed": 0.1,
+    "target_inside_ratio": 0.03,
+    "target_inside_confidence": 0.5
+  },
+  "seed": 1994160032
+}

@@ -1,0 +1,93 @@
+{
+      "exp_base": "./exps",
+    "exp_name": "domainnet",
+    "exp_id": "real->sketch:3",
+    "data_params": {
+        "name": "domainnet",
+        "source": "real",
+        "target": "sketch",
+        "fewshot": "3",
+        "aug": "aug_0"
+    },
+    "model_params": {
+        "out_dim": 512,
+        "version": "pretrain-resnet101",
+        "load_memory_bank": true,
+        "load_weight": "src-tgt",
+        "load_weight_thres": 50,
+        "load_weight_epoch": 2
+    },
+    "loss_params": {
+        "loss": [
+            "cls-so",
+            "proto-each",
+            "I2C-cross",
+            "semi-entmin",
+            "semi-condentmax",
+            "tgt-entmin",
+            "tgt-condentmax"
+        ],
+        "weight": [
+            1,
+            1,
+            1,
+            0.05,
+            0.05,
+            0.05,
+            0.05
+        ],
+        "temp": 0.1,
+        "clus": {
+            "kmeans_freq": 4,
+            "type": [
+                "each"
+            ],
+            "k": [
+                126,
+                126,
+                126,
+                126,
+                126,
+                126,
+                126,
+                126,
+                126,
+                126,
+                252,
+                252,
+                252,
+                252,
+                252,
+                252,
+                252,
+                252,
+                252,
+                252
+            ],
+            "n_k": 1
+        },
+        "thres_src": 0.99,
+        "thres_tgt": 0.99
+    },
+    "num_epochs": 500,
+    "steps_epoch": null,
+    "optim_params": {
+        "batch_size_lbd": 32,
+        "batch_size": 64,
+        "learning_rate": 0.01,
+        "conv_lr_ratio": 0.1,
+        "decay": true,
+        "weight_decay": 0.0005,
+        "patience": 4
+    },
+    "confidence_params":
+    {
+      "confidence_ratio": 0.35,
+      "lambda_mixed": 1.25,
+      "mixup_alpha": 0.75,
+      "lambda_target_mixed": 0.2,
+      "target_inside_ratio": 0.25,
+      "target_inside_confidence": 0.75
+    },
+    "seed": 1337
+}
