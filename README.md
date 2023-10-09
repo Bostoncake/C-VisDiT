@@ -1,6 +1,6 @@
 # Confidence-based Visual Dispersal for Few-shot Unsupervised Domain Adaptation (C-VisDiT)
 
-Pytorch implementation of C-VisDiT (**C**onfidence-based **Vis**ual **D**ispersal **T**ransfer)
+Pytorch implementation of [C-VisDiT](https://openaccess.thecvf.com/content/ICCV2023/html/Xiong_Confidence-based_Visual_Dispersal_for_Few-shot_Unsupervised_Domain_Adaptation_ICCV_2023_paper.html) (**C**onfidence-based **Vis**ual **D**ispersal **T**ransfer)
 
 ## Overview
 
@@ -33,16 +33,15 @@ pip install dotmap faiss-gpu==1.7.0 scikit-learn tensorboard tqdm
 ## Citation
 
 ```bibtex
-TODO
+@inproceedings{xiong2023confidence,
+  title={Confidence-based Visual Dispersal for Few-shot Unsupervised Domain Adaptation},
+  author={Xiong, Yizhe and Chen, Hui and Lin, Zijia and Zhao, Sicheng and Ding, Guiguang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={11621--11631},
+  year={2023}
+}
 ```
 
 ## Acknowlegdement
 
 This code is built on [[PCS](https://github.com/zhengzangw/PCS-FUDA)]. We thank the authors for sharing their code and some of the training configuration files. We reproduced some of the PCS results on our own.
-
-## ToDo List
-
-- Link to the official ICCV 2023 article page
-- Add bibtex citations
-- Link to the conference poster
-- Upload the article to ArXiv
