@@ -1,5 +1,9 @@
 # Confidence-based Visual Dispersal for Few-shot Unsupervised Domain Adaptation (C-VisDiT)
 
+[![Paper](https://img.shields.io/badge/paper-arxiv.2309.15575-B31B1B.svg)](https://arxiv.org/pdf/2309.15575.pdf)
+[![Conference](https://img.shields.io/badge/iccv-2023-4b44ce.svg)](https://openaccess.thecvf.com/content/ICCV2023/html/Xiong_Confidence-based_Visual_Dispersal_for_Few-shot_Unsupervised_Domain_Adaptation_ICCV_2023_paper.html)
+
+
 Pytorch implementation of [C-VisDiT](https://openaccess.thecvf.com/content/ICCV2023/html/Xiong_Confidence-based_Visual_Dispersal_for_Few-shot_Unsupervised_Domain_Adaptation_ICCV_2023_paper.html) (**C**onfidence-based **Vis**ual **D**ispersal **T**ransfer)
 
 ## Overview
