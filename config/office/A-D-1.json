@@ -9,7 +9,7 @@
     "fewshot": "1",
     "aug": "aug_0"
   },
-  "num_epochs": 1,
+  "num_epochs": 500,
   "steps_epoch": null,
   "optim_params": {
     "learning_rate": 0.01,
