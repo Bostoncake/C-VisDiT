@@ -151,7 +151,6 @@ class BaseAgent(object):
                 self.logger.info(
                     f"accuracy not improved in {patience} epoches, stopped"
                 )
-                self.plot_mapping_acc()
                 break
             # train
             self.current_epoch = epoch
